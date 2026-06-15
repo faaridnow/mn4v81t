@@ -86,6 +86,7 @@ kanallar = [
         "url_referer": "https://aztv.az/",
         "stream_base": "https://str.yodacdn.net/idmantele/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%C4%B0dman_TV_%282019%29.png"
     },
     {
         "type": "token_yoda",
@@ -93,6 +94,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/xazartv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Xazar_TV_Logo.png"
     },
     {
         "type": "token_yoda",
@@ -100,6 +102,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arb/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/az/d/d4/ARB_TV_logo.png"
     },
     {
         "type": "token_yoda",
@@ -107,6 +110,8 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/ictimaitv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://itv.az/assets/images/itv-logo.png"
+        
     },
     {
         "type": "token_yoda",
@@ -114,6 +119,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/bakutv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Baku_TV_%282018%29.png"
     },
     {
         "type": "token_yoda",
@@ -121,6 +127,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/real/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Real_TV_loqosu_%282018%29.png"
     },
     {
         "type": "token_yoda",
@@ -128,6 +135,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arb24/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/74/ARB_24_logo1.png"
     },
     {
         "type": "token_yoda",
@@ -135,6 +143,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/apatv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://apagroup.az/storage/news/one/65e5c5252a1fc65e5c5252a1fd170955702965e5c5252a1fa65e5c5252a1fb.jpg"
     },
     {
         "type": "token_yoda",
@@ -142,6 +151,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/tmbaz/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://tmb.tv/wp-content/uploads/2025/01/tmbtaz-png.png"
     },
     {
         "type": "token_yoda",
@@ -149,6 +159,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arbgunesh/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/f/fe/ARB_G%C3%BCn%C9%99%C5%9F_logo.png"
     },
     {
         "type": "token_yoda",
@@ -163,6 +174,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/medeniyyettele/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/25/M%C9%99d%C9%99niyy%C9%99t_TV_%282019%29.png"
     },
     {
         "type": "token_yoda",
@@ -177,6 +189,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/mtvaz/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/a/a1/MTV_Azerbaijan_Logo.png"
     },
     
     # ---- SABİT VƏ STATİK KANALLAR (Birbaşa linklər) ----
@@ -189,6 +202,7 @@ kanallar = [
         "type": "direct",
         "ad": "CBC Sport",
         "stream_url": "https://cbcsports-live.lg.mncdn.com/cbcsports_live/cbcsports/chunklist.m3u8"
+        "logo": "https://cbcsport.info/wp-content/uploads/2025/06/cbc_logo2-removebg-preview-300x275.png"
     },
     # ---- DAİONCDN QRUPU KANALLARI ----
     {
@@ -196,14 +210,14 @@ kanallar = [
         "ad": "Show TV",
         "url": "https://www.showtv.com.tr/canli-yayin", 
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
       {
         "type": "generic_scraper",
         "ad": "Show Turk",
         "url": "https://www.showturk.com.tr/canli-yayin", 
         "stream_base": "https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFMV4YrFU7WJoI5-RytXXxSIipbnZMaBBdjn8BBQi7Q&s=10"
     },
 ]
 
