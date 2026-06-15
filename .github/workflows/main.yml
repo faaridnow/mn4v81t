@@ -1,0 +1,36 @@
+name: Avtomatik IPTV Yeniləyici
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # Hər 6 saatdan bir işləyəcək
+  workflow_dispatch: # Əllə işə salmaq üçün düymə yaradır
+
+permissions:
+  contents: write # Skriptin faylı yeniləyib saxlaya bilməsi üçün icazə
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repozitoriyanı yoxla
+        uses: actions/checkout@v4
+
+      - name: Python mühitini qur
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Lazımi kitabxanaları yüklə
+        run: pip install requests
+
+      - name: Skripti işə sal və linkləri tap
+        run: python update.py
+
+      - name: Yenilənmiş M3U faylını yadda saxla (Commit & Push)
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add channels.m3u
+          # Əgər heç bir dəyişiklik yoxdursa xəta verməməsi üçün exit 0 istifadə edirik
+          git commit -m "Kanallar avtomatik yeniləndi" || exit 0
+          git push
