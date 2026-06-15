@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1,AzTV
-https://str.yodacdn.net/azertv/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjIwLjU1LjIxNC43MyIsInVhIjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEyMC4wLjAuMCIsImV4cCI6MTc4MTU1NDQ4NCwianRpIjoiZDZjMmJhMzAwMDM1YjUzZSJ9.yNdBZC0XaYnWSdBWI6rPUcfeNOed47u03k/g40f1ZJo=|Origin=https://yodaplayer.yodacdn.net/&Referer=https://yodaplayer.yodacdn.net/&User-Agent=Mozilla/5.0
+https://str.yodacdn.net/azertv/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjIwLjExOS4xMDMuNjEiLCJ1YSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjAuMC4wLjAiLCJleHAiOjE3ODE1NTYzMjAsImp0aSI6IjBhNzkyYTM3OGE5MzMxYWQifQ==.YQyqjjxLlOZyhV968yoJGU0ppyRChvCve8wn/GuVPkU=|Origin=https://yodaplayer.yodacdn.net/&Referer=https://yodaplayer.yodacdn.net/&User-Agent=Mozilla/5.0
 #EXTINF:-1,Idman TV
-https://str.yodacdn.net/idmantele/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjIwLjU1LjIxNC43MyIsInVhIjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEyMC4wLjAuMCIsImV4cCI6MTc4MTU1NDUwMCwianRpIjoiODVhOGNhN2ZmODhjOGEyZSJ9./5djdMsW9jHGfxyoM5rweEaOS+mlI/ldM6rN2Td8CJ4=|Origin=https://yodaplayer.yodacdn.net/&Referer=https://yodaplayer.yodacdn.net/&User-Agent=Mozilla/5.0
+https://str.yodacdn.net/idmantele/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjIwLjExOS4xMDMuNjEiLCJ1YSI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xMjAuMC4wLjAiLCJleHAiOjE3ODE1NTYzMjcsImp0aSI6IjE5ODZlMTFmMjRiMTMxZGUifQ==.nr7OFc4eSCQo2+h54UYyRUTmDEzz7BF4RgRuUNAVmUc=|Origin=https://yodaplayer.yodacdn.net/&Referer=https://yodaplayer.yodacdn.net/&User-Agent=Mozilla/5.0
 #EXTINF:-1,Xezer TV
 https://str.yodacdn.net/xazartv/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjkxLjE5MS4xOTkuMjE2IiwidWEiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgMTA7IEspIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDkuMC4wLjAgTW9iaWxlIFNhZmFyaS81MzcuMzYiLCJleHAiOjE3ODE1NTI4MTIsImp0aSI6IjVkZTVhZTUzYmZhNDVlMTkifQ==.HKjq7oM0fQzWukH1mVGdJUcTBC+jKXc4pmlP9zq2p4M=|Origin=https://yodaplayer.yodacdn.net/&Referer=https://yodaplayer.yodacdn.net/&User-Agent=Mozilla/5.0
 #EXTINF:-1,ARB
@@ -31,3 +31,9 @@ https://str.yodacdn.net/space/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjkxLjE5MS4
 https://str.yodacdn.net/mtvaz/tracks-v1a1/mono.ts.m3u8?token=eyJpcCI6IjkxLjE5MS4xOTkuMjE2IiwidWEiOiJNb3ppbGxhLzUuMCAoTGludXg7IEFuZHJvaWQgMTA7IEspIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS8xNDkuMC4wLjAgTW9iaWxlIFNhZmFyaS81MzcuMzYiLCJleHAiOjE3ODE1NTI4MTIsImp0aSI6IjVkZTVhZTUzYmZhNDVlMTkifQ==.HKjq7oM0fQzWukH1mVGdJUcTBC+jKXc4pmlP9zq2p4M=|Origin=https://yodaplayer.yodacdn.net/&Referer=https://yodaplayer.yodacdn.net/&User-Agent=Mozilla/5.0
 #EXTINF:-1,ATV
 https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8
+#EXTINF:-1,CBC Sport
+https://cbcsports-live.lg.mncdn.com/cbcsports_live/cbcsports/chunklist.m3u8
+#EXTINF:-1,TRT 1
+https://kL9mR2vXw7nQ5pY1sH4tJ3gB6.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,Show TV
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
