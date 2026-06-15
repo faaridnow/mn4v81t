@@ -14,7 +14,6 @@ def handle_token_yoda(kanal, headers):
     """Tip 2: YodaCDN işlədən dinamik kanallar (AzTV, İdman TV və s.)"""
     print(f'   [YodaCDN] Səhifə yüklənir: {kanal["url"]}')
     
-    # İlk sorğu üçün local headers kopyalayırıq
     req_headers = headers.copy()
     if "url_referer" in kanal:
         req_headers['Referer'] = kanal["url_referer"]
@@ -23,10 +22,8 @@ def handle_token_yoda(kanal, headers):
         res = requests.get(kanal["url"], headers=req_headers, timeout=15)
         res.raise_for_status()
         
-        # Səhifədən player və ya iframe linkini tapırıq
         iframe_link = re.search(r'src=["\'](https?://[^"\']+?(?:yodaplayer|embed|player|cdn)[^"\']*?)["\']', res.text)
         if not iframe_link:
-            # Əgər iframe tapılmasa, birbaşa url-in özünü player hesab etməyə çalışaq (Məs: yoda.az birbaşa embed ola bilər)
             if "yodaplayer" in kanal["url"] or "yoda.az" in kanal["url"]:
                 gizli_url = kanal["url"]
             else:
@@ -34,7 +31,6 @@ def handle_token_yoda(kanal, headers):
         else:
             gizli_url = iframe_link.group(1)
         
-        # İframe-ə müraciət edirik
         iframe_headers = headers.copy()
         iframe_headers['Referer'] = kanal.get("url_referer", kanal["url"])
         
@@ -42,12 +38,10 @@ def handle_token_yoda(kanal, headers):
         iframe_res = requests.get(gizli_url, headers=iframe_headers, timeout=15)
         iframe_res.raise_for_status()
         
-        # data-token tapılması (dırnaqlı və ya dırnaqsız halları nəzərə alaraq)
         token_tapildi = re.search(r'data-token\s*=\s*["\']?([^"\'\s>]+)["\']?', iframe_res.text)
         
         if token_tapildi:
             token = token_tapildi.group(1)
-            # IPTV Playerlərin (VLC, Perfect Player və s.) tanıması üçün User-Agent və Referer inject formatı
             return f"{kanal['stream_base']}?token={token}|Origin={kanal['referer']}&Referer={kanal['referer']}&User-Agent=Mozilla/5.0"
             
     except Exception as e:
@@ -71,13 +65,13 @@ def handle_generic_scraper(kanal, headers):
     except Exception as e:
         print(f'   [Scraper Xətası]: {e}')
     return None
-    def handle_trt(kanal, headers):
+
+def handle_trt(kanal, headers):
     """Tip 4: TRT üçün xüsusi API skraperi (Pleyer üçün Referer dəstəkli)"""
     print(f'   [TRT API] Token sorğulanır...')
     try:
         api_url = "https://api-tv.trt.net.tr/v1/channels/trt-1/stream"
         
-        # TRT API-ni inandırmaq üçün başlıqlar
         x_headers = headers.copy()
         x_headers['Origin'] = 'https://www.trtizle.com'
         x_headers['Referer'] = 'https://www.trtizle.com/'
@@ -86,8 +80,6 @@ def handle_generic_scraper(kanal, headers):
         data = res.json()
         
         if "url" in data:
-            # ƏSAS HİYLƏ BURADADIR:
-            # Pleyerə bu linki açarkən özünü "trtizle.com" kimi aparmasını əmr edirik.
             return f'{data["url"]}|Referer=https://www.trtizle.com/&User-Agent=Mozilla/5.0'
             
     except Exception as e:
@@ -228,11 +220,10 @@ kanallar = [
     {
         "type": "generic_scraper",
         "ad": "Show TV",
-        "url": "https://www.showtv.com.tr/canli-yayin", # Show TV-nin rəsmi canlı yayım səhifəsi
+        "url": "https://www.showtv.com.tr/canli-yayin", 
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
-    },
-    
+    }
 ]
 
 # ==============================================================================
@@ -260,10 +251,16 @@ def main():
                     canli_link = handle_token_yoda(kanal, headers)
                 elif kanal["type"] == "generic_scraper":
                     canli_link = handle_generic_scraper(kanal, headers)
+                elif kanal["type"] == "trt_api":
+                    canli_link = handle_trt(kanal, headers)
                 
                 if canli_link:
-                    # Boşluq xətası düzəldildi və standartlaşdırıldı
-                    f.write(f'#EXTINF:-1,{kanal["ad"]}\n')
+                    # Loqo dəstəyi bura əlavə edildi
+                    if "logo" in kanal and kanal["logo"]:
+                        f.write(f'#EXTINF:-1 tvg-logo="{kanal["logo"]}",{kanal["ad"]}\n')
+                    else:
+                        f.write(f'#EXTINF:-1,{kanal["ad"]}\n')
+                        
                     f.write(f'{canli_link}\n')
                     print(f'   => [UĞURLU] {kanal["ad"]} pleylistə yazıldı.\n')
                 else:
