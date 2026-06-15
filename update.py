@@ -71,6 +71,28 @@ def handle_generic_scraper(kanal, headers):
     except Exception as e:
         print(f'   [Scraper Xətası]: {e}')
     return None
+    def handle_trt(kanal, headers):
+    """Tip 4: TRT üçün xüsusi API skraperi (Pleyer üçün Referer dəstəkli)"""
+    print(f'   [TRT API] Token sorğulanır...')
+    try:
+        api_url = "https://api-tv.trt.net.tr/v1/channels/trt-1/stream"
+        
+        # TRT API-ni inandırmaq üçün başlıqlar
+        x_headers = headers.copy()
+        x_headers['Origin'] = 'https://www.trtizle.com'
+        x_headers['Referer'] = 'https://www.trtizle.com/'
+        
+        res = requests.get(api_url, headers=x_headers, timeout=15)
+        data = res.json()
+        
+        if "url" in data:
+            # ƏSAS HİYLƏ BURADADIR:
+            # Pleyerə bu linki açarkən özünü "trtizle.com" kimi aparmasını əmr edirik.
+            return f'{data["url"]}|Referer=https://www.trtizle.com/&User-Agent=Mozilla/5.0'
+            
+    except Exception as e:
+        print(f'   [TRT API XƏTASI] API oxunarkən problem oldu: {e}')
+    return None
 
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
@@ -198,10 +220,9 @@ kanallar = [
     },
     # ---- DAİONCDN QRUPU KANALLARI ----
     {
-        "type": "generic_scraper",
+        "type": "trt_api",
         "ad": "TRT 1",
         "url": "https://www.trtizle.com/canli/tv/trt-1",
-        "stream_base": "https://trt.daioncdn.net/trt-1/master_1440p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/TRT_1_logo_%282021%29.png"
     },
     {
@@ -211,6 +232,7 @@ kanallar = [
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
     },
+    
 ]
 
 # ==============================================================================
