@@ -197,14 +197,14 @@ kanallar = [
         "url": "https://www.showtv.com.tr/canli-yayin", 
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
-    }
+    },
       {
         "type": "generic_scraper",
         "ad": "Show Turk",
         "url": "https://www.showturk.com.tr/canli-yayin", 
         "stream_base": "https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
-    }
+    },
 ]
 
 # ==============================================================================
@@ -232,8 +232,6 @@ def main():
                     canli_link = handle_token_yoda(kanal, headers)
                 elif kanal["type"] == "generic_scraper":
                     canli_link = handle_generic_scraper(kanal, headers)
-                elif kanal["type"] == "trt_api":
-                    canli_link = handle_trt(kanal, headers)
                 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
