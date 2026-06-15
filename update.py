@@ -102,7 +102,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arb/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/az/d/d4/ARB_TV_logo.png"
+        "logo": "https://www.arbtv.az/assets/uploads/events/1.arbtv.png"
     },
     {
         "type": "token_yoda",
