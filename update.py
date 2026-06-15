@@ -190,26 +190,27 @@ kanallar = [
         "type": "direct",
         "ad": "ATV",
         "stream_url": "https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8"
-    }
+    },
     {
         "type": "direct",
         "ad": "CBC Sport",
         "stream_url": "https://cbcsports-live.lg.mncdn.com/cbcsports_live/cbcsports/chunklist.m3u8"
-    }
+    },
+    # ---- DAİONCDN QRUPU KANALLARI ----
     {
         "type": "generic_scraper",
         "ad": "TRT 1",
         "url": "https://www.trtizle.com/canli/tv/trt-1",
         "stream_base": "https://trt.daioncdn.net/trt-1/master_1440p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/TRT_1_logo_%282021%29.png"
-    }
+    },
     {
         "type": "generic_scraper",
         "ad": "Show TV",
         "url": "https://www.showtv.com.tr/canli-yayin", # Show TV-nin rəsmi canlı yayım səhifəsi
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Show_TV_logo_2014.png"
-    }
+    },
 ]
 
 # ==============================================================================
