@@ -3,9 +3,8 @@ import re
 
 # Bütün fərqli kanalları və onların saytlarını buraya əlavə edəcəksiniz
 kanallar = [
-    {"ad": "AzTV", "url": "https://numnune-sayt.com/aztv-canli-yayim"},
-    {"ad": "Kanal D", "url": "https://basqa-bir-sayt.net/kanal-d-izle"},
-    {"ad": "İdman TV", "url": "https://idman-sayti.org/stream"}
+    {"ad": "AzTV", "url": "https://aztv.az/az/live"},
+    {"ad": "Azad Azərbaycan HD", "url": "https://atv.az/live"},
 ]
 
 with open("channels.m3u", "w", encoding="utf-8") as f:
