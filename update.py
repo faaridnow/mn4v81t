@@ -65,29 +65,92 @@ kanallar = [
     {
         "type": "token_yoda",
         "ad": "Xezer TV", 
-        "url": "https://aztv.az/az/live-idman",
+        "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/xazartv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
     },
     {
         "type": "token_yoda",
         "ad": "ARB", 
-        "url": "https://aztv.az/az/live-idman",
+        "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arb/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
     },
     {
         "type": "token_yoda",
         "ad": "İctimai TV", 
-        "url": "https://aztv.az/az/live-idman",
+        "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/ictimaitv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
     },
     {
         "type": "token_yoda",
         "ad": "Baku TV", 
-        "url": "https://aztv.az/az/live-idman",
+        "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/bakutv/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "Real TV", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/real/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "ARB 24", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/arb24/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "APA TV", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/apatv/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "TMB Azerbaycan", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/tmbaz/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+     {
+        "type": "token_yoda",
+        "ad": "ARB Gunes", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/arbgunesh/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+         {
+        "type": "token_yoda",
+        "ad": "CBC", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/cbc/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "Medeniyyet Tv, 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/medeniyyettele/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "Space TV", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/space/tracks-v1a1/mono.ts.m3u8",
+        "referer": "https://yodaplayer.yodacdn.net/"
+    },
+    {
+        "type": "token_yoda",
+        "ad": "MTV Azerbaijan", 
+        "url": "https://yoda.az/",
+        "stream_base": "https://str.yodacdn.net/mtvaz/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
     },
     
