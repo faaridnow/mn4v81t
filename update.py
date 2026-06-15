@@ -134,7 +134,7 @@ kanallar = [
     },
     {
         "type": "token_yoda",
-        "ad": "Medeniyyet Tv, 
+        "ad": "Medeniyyet Tv", 
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/medeniyyettele/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/"
