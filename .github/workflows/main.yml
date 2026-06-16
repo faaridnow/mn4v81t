@@ -2,7 +2,7 @@ name: Avtomatik IPTV Yeniləyici
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Hər 6 saatdan bir işləyəcək
+    - cron: '0 */4 * * *' # Hər 4 saatdan bir işləyəcək
   workflow_dispatch: # Əllə işə salmaq üçün düymə yaradır
 
 permissions:
@@ -20,17 +20,15 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Lazımi kitabxanaları yüklə
-        run: pip install requests
+      - name: Lazımi bütün kitabxanaları və Playwright-ı yüklə
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests playwright nest_asyncio
+          playwright install chromium
+          playwright install-deps
 
       - name: Skripti işə sal və linkləri tap
         run: python update.py
-        
-      - name: Install Playwright and dependencies
-        run: |
-          pip install playwright nest_asyncio
-          playwright install chromium
-          playwright install-deps
 
       - name: Yenilənmiş M3U faylını yadda saxla (Commit & Push)
         run: |
