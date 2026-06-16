@@ -247,16 +247,12 @@ kanallar = [
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
-    {
-        "type": "showturk_api",  # TİP YENİLƏNDİ
-        "ad": "Show Turk",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFMV4YrFU7WJoI5-RytXXxSIipbnZMaBBdjn8BBQi7Q&s=10"
+     {
+        "type": "generic_scraper",
+        "ad": "NOW TV",
+        "url": "https://www.nowtv.com.tr/canli-yayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NOW_TV_%28Turkey%29_wordmark-red.svg/1280px-NOW_TV_%28Turkey%29_wordmark-red.svg.png"
     },
-    {
-        "type": "trt_api",       # TRT DƏ GƏLƏCƏK ÜÇÜN BURA ƏLAVƏ EDİLDİ
-        "ad": "TRT 1",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/TRT_1_logo_%282021%29.png"
-    }
 ]
 
 # ==============================================================================
