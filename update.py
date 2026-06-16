@@ -370,7 +370,7 @@ def main():
                 elif kanal["type"] == "trt":
                     canli_link = handle_trt(kanal, headers)
                 elif kanal["type"] == "show_turk":
-                     link = handle_show_turk(kanal, headers)
+                    canli_link = handle_show_turk(kanal, headers)
 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
