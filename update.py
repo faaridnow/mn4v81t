@@ -67,40 +67,32 @@ def handle_generic_scraper(kanal, headers):
     return None
 
 def handle_trt(kanal, headers):
-    """Tip 4: TRT üçün xüsusi API skraperi"""
-    print(f'   [TRT API] Token sorğulanır...')
+    """TRT kanalları üçün tamamilə təcrid olunmuş xüsusi bilet ovçusu"""
+    print(f'   [TRT] Xüsusi kəşfiyyat başladılıb: {kanal["ad"]}')
+    
+    local_headers = headers.copy()
+    local_headers['Referer'] = 'https://www.trtizle.com/'
+    
     try:
-        api_url = "https://api-tv.trt.net.tr/v1/channels/trt-1/stream"
+        res = requests.get(kanal["url"], headers=local_headers, timeout=12)
+        res.raise_for_status()
         
-        x_headers = headers.copy()
-        x_headers['Origin'] = 'https://www.trtizle.com'
-        x_headers['Referer'] = 'https://www.trtizle.com/'
+        # Sənin kəşf etdiyin uğurlu aqressiv pattern
+        pattern = r'(https?://[^\s"\'<>]+?\.m3u8\?[^\s"\'<>]+)'
+        m3u8_tapildi = re.search(pattern, res.text)
+        if m3u8_tapildi:
+            return m3u8_tapildi.group(1)
         
-        res = requests.get(api_url, headers=x_headers, timeout=15)
-        data = res.json()
-        
-        if "url" in data:
-            return f'{data["url"]}|Referer=https://www.trtizle.com/&User-Agent=Mozilla/5.0'
+        # B Planı
+        pattern_b = r'(https?://[^\s"\'<>]+?\.m3u8)'
+        m3u8_b = re.search(pattern_b, res.text)
+        if m3u8_b:
+            return m3u8_b.group(1)
             
     except Exception as e:
-        print(f'   [TRT API XƏTASI] API oxunarkən problem oldu: {e}')
+        print(f'   [TRT Xətası]: {e}')
     return None
-
-def handle_showturk(kanal, headers):
-    """Tip 5: Show Türk üçün xüsusi API skraperi"""
-    print(f'   [Show Turk API] Token sorğulanır...')
-    try:
-        api_url = "https://mo.ciner.com.tr/video/live/showturk"
-        res = requests.get(api_url, headers=headers, timeout=15)
-        data = res.json()
-        
-        if "data" in data and "live" in data["data"]:
-            return data["data"]["live"]["url"]
-            
-    except Exception as e:
-        print(f'   [Show Turk API XƏTASI] API oxunarkən problem oldu: {e}')
-    return None
-
+    
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
 # ==============================================================================
@@ -241,13 +233,43 @@ kanallar = [
     
     # ---- DAİONCDN / API QRUPU KANALLARI ----
     {
+        "type": "trt",
+        "ad": "TRT 1",
+        "url": "https://www.trtizle.com/canli-yayin/trt-1",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/TRT_1_logo_%282021%29.png"
+    },
+    {
+        "type": "trt",
+        "ad": "Kanal D",
+        "url": "https://www.kanald.com.tr/canli-yayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/archive/4/4e/20240406161353%21Kanal_D.png"
+    },
+    {
+        "type": "trt",
+        "ad": "Euro D",
+        "url": "https://www.eurod.net.tr/canli-yayin",
+        "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest?cb=20220108144208"
+    },
+    {
+        "type": "trt",
+        "ad": "TV 2",
+        "url": "https://www.tv2.com.tr/canli-yayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/a/ae/Tv2_logo_%282026%29.png"
+    },
+    {
+        "type": "trt",
+        "ad": "TV8",
+        "url": "https://www.tv8.com.tr/canli-yayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png"
+    },
+    {
         "type": "generic_scraper",
         "ad": "Show TV",
         "url": "https://www.showtv.com.tr/canli-yayin", 
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
-     {
+    {
         "type": "generic_scraper",
         "ad": "NOW TV",
         "url": "https://www.nowtv.com.tr/canli-yayin",
@@ -281,11 +303,9 @@ def main():
                     canli_link = handle_token_yoda(kanal, headers)
                 elif kanal["type"] == "generic_scraper":
                     canli_link = handle_generic_scraper(kanal, headers)
-                elif kanal["type"] == "trt_api":
+                elif kanal["type"] == "trt":
                     canli_link = handle_trt(kanal, headers)
-                elif kanal["type"] == "showturk_api":
-                    canli_link = handle_showturk(kanal, headers)
-                
+
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
                     if "logo" in kanal and kanal["logo"]:
