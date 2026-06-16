@@ -1,3 +1,10 @@
+import nest_asyncio
+import asyncio
+from playwright.async_api import async_playwright
+
+# Playwright-ın sinxron əsas dövrlərlə toqquşmaması üçün Colab-da etdiyimiz kimi aktivləşdiririk
+nest_asyncio.apply()
+
 import requests
 import re
 import sys
@@ -92,6 +99,57 @@ def handle_trt(kanal, headers):
     except Exception as e:
         print(f'   [TRT Xətası]: {e}')
     return None
+
+def handle_show_turk(kanal, headers):
+    """
+    Playwright brauzer simulyasiyası ilə şəbəkə loqlarını dinləyən
+    və hər dəfə 100% YENİ və təzə link qoparan canavar ovçu.
+    """
+    print(f'   [Show Türk] Playwright brauzer ordusu başladıldı: {kanal["ad"]}')
+    
+    m3u8_links = []
+    url = "https://www.showturk.com.tr/canli-yayin/"
+
+    async def run_browser():
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
+            )
+            page = await browser.new_page()
+
+            # Brauzerin arxa planda etdiyi bütün şəbəkə sorğularını tuturuq
+            def handle_response(response):
+                if ".m3u8" in response.url and "st=" in response.url:
+                    m3u8_links.append(response.url)
+
+            page.on("response", handle_response)
+
+            try:
+                # Sayta giriş edib JavaScript-in işləməsini gözləyirik
+                await page.goto(url, timeout=45000, wait_until="domcontentloaded")
+                await page.wait_for_timeout(8000)
+            except Exception as e:
+                print(f"   [Show Türk Brauzer Xətası]: {e}")
+            finally:
+                await browser.close()
+
+    # Asinxron funksiyanı sinxron əsas kodun daxilində işə salırıq
+    try:
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(run_browser())
+    except Exception as e:
+        print(f"   [Show Türk Dövr Xətası]: {e}")
+
+    # Əgər brauzer uğurla link tutubsa, pleylistə yazırıq
+    if m3u8_links:
+        taze_link = list(set(m3u8_links))[0].replace('\\', '')
+        print("   [Show Türk] Yepyeni dinamik bilet uğurla şəbəkədən sızdırıldı!")
+        return taze_link
+
+    # Fövqəladə sığorta vəziyyəti (Əgər brauzer hansısa səbəbdən ilişərsə, pleylist boş qalmasın)
+    print("   [Show Türk] Brauzer link tuta bilmədi, statik sığorta xəttinə keçilir.")
+    return "https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8"
     
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
@@ -236,7 +294,7 @@ kanallar = [
         "type": "trt",
         "ad": "TRT 1",
         "url": "https://www.trtizle.com/canli-yayin/trt-1",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/TRT_1_logo_%282021%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6c/TRT_1_logo_%282012-2021%29.png"
     },
     {
         "type": "trt",
@@ -268,6 +326,12 @@ kanallar = [
         "url": "https://www.showtv.com.tr/canli-yayin", 
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
+    },
+    {
+        "type": "show_turk",
+        "ad": "Show Türk",
+        "url": "https://www.showturk.com.tr/canli-yayin/",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/1920px-Show_Turk_logo.svg.png"
     },
     {
         "type": "generic_scraper",
@@ -305,6 +369,8 @@ def main():
                     canli_link = handle_generic_scraper(kanal, headers)
                 elif kanal["type"] == "trt":
                     canli_link = handle_trt(kanal, headers)
+                elif kanal["type"] == "show_turk":
+                     link = handle_show_turk(kanal, headers)
 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
