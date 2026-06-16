@@ -66,6 +66,41 @@ def handle_generic_scraper(kanal, headers):
         print(f'   [Scraper Xətası]: {e}')
     return None
 
+def handle_trt(kanal, headers):
+    """Tip 4: TRT üçün xüsusi API skraperi"""
+    print(f'   [TRT API] Token sorğulanır...')
+    try:
+        api_url = "https://api-tv.trt.net.tr/v1/channels/trt-1/stream"
+        
+        x_headers = headers.copy()
+        x_headers['Origin'] = 'https://www.trtizle.com'
+        x_headers['Referer'] = 'https://www.trtizle.com/'
+        
+        res = requests.get(api_url, headers=x_headers, timeout=15)
+        data = res.json()
+        
+        if "url" in data:
+            return f'{data["url"]}|Referer=https://www.trtizle.com/&User-Agent=Mozilla/5.0'
+            
+    except Exception as e:
+        print(f'   [TRT API XƏTASI] API oxunarkən problem oldu: {e}')
+    return None
+
+def handle_showturk(kanal, headers):
+    """Tip 5: Show Türk üçün xüsusi API skraperi"""
+    print(f'   [Show Turk API] Token sorğulanır...')
+    try:
+        api_url = "https://mo.ciner.com.tr/video/live/showturk"
+        res = requests.get(api_url, headers=headers, timeout=15)
+        data = res.json()
+        
+        if "data" in data and "live" in data["data"]:
+            return data["data"]["live"]["url"]
+            
+    except Exception as e:
+        print(f'   [Show Turk API XƏTASI] API oxunarkən problem oldu: {e}')
+    return None
+
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
 # ==============================================================================
@@ -111,7 +146,6 @@ kanallar = [
         "stream_base": "https://str.yodacdn.net/ictimaitv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
         "logo": "https://itv.az/assets/images/itv-logo.png"
-        
     },
     {
         "type": "token_yoda",
@@ -204,7 +238,8 @@ kanallar = [
         "stream_url": "https://cbcsports-live.lg.mncdn.com/cbcsports_live/cbcsports/chunklist.m3u8",
         "logo": "https://cbcsport.info/wp-content/uploads/2025/06/cbc_logo2-removebg-preview-300x275.png"
     },
-    # ---- DAİONCDN QRUPU KANALLARI ----
+    
+    # ---- DAİONCDN / API QRUPU KANALLARI ----
     {
         "type": "generic_scraper",
         "ad": "Show TV",
@@ -212,14 +247,16 @@ kanallar = [
         "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
-      {
-        "type": "generic_scraper",
+    {
+        "type": "showturk_api",  # TİP YENİLƏNDİ
         "ad": "Show Turk",
-        "url": "https://www.showturk.com.tr/canli-yayin", 
-        "stream_base": "https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFMV4YrFU7WJoI5-RytXXxSIipbnZMaBBdjn8BBQi7Q&s=10"
     },
-
+    {
+        "type": "trt_api",       # TRT DƏ GƏLƏCƏK ÜÇÜN BURA ƏLAVƏ EDİLDİ
+        "ad": "TRT 1",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/TRT_1_logo_%282021%29.png"
+    }
 ]
 
 # ==============================================================================
@@ -241,12 +278,17 @@ def main():
             canli_link = None
             
             try:
+                # İF-ELİF BLOKLARI YENİLƏNDİ
                 if kanal["type"] == "direct":
                     canli_link = handle_direct(kanal)
                 elif kanal["type"] == "token_yoda":
                     canli_link = handle_token_yoda(kanal, headers)
                 elif kanal["type"] == "generic_scraper":
                     canli_link = handle_generic_scraper(kanal, headers)
+                elif kanal["type"] == "trt_api":
+                    canli_link = handle_trt(kanal, headers)
+                elif kanal["type"] == "showturk_api":
+                    canli_link = handle_showturk(kanal, headers)
                 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
