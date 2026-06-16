@@ -25,6 +25,12 @@ jobs:
 
       - name: Skripti işə sal və linkləri tap
         run: python update.py
+        
+      - name: Install Playwright and dependencies
+        run: |
+          pip install playwright nest_asyncio
+          playwright install chromium
+          playwright install-deps
 
       - name: Yenilənmiş M3U faylını yadda saxla (Commit & Push)
         run: |
