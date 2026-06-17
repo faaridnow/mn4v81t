@@ -2,7 +2,7 @@ name: Avtomatik IPTV Yeniləyici
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Hər 4 saatdan bir işləyəcək
+    - cron: '0 */2 * * *' # Hər 2 saatdan bir işləyəcək
   workflow_dispatch: # Əllə işə salmaq üçün düymə yaradır
 
 permissions:
