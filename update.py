@@ -305,13 +305,13 @@ kanallar = [
         "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest?cb=20220108144208"
     },
     {
-        "type": "trt",
+        "type": "playwright",
         "ad": "TV 2",
         "url": "https://www.tv2.com.tr/canli-yayin",
         "logo": "https://upload.wikimedia.org/wikipedia/tr/a/ae/Tv2_logo_%282026%29.png"
     },
     {
-        "type": "trt",
+        "type": "playwright",
         "ad": "TV8",
         "url": "https://www.tv8.com.tr/canli-yayin",
         "logo": "https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png"
@@ -340,6 +340,60 @@ kanallar = [
         "ad": "NOW TV",
         "url": "https://www.nowtv.com.tr/canli-yayin",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NOW_TV_%28Turkey%29_wordmark-red.svg/1280px-NOW_TV_%28Turkey%29_wordmark-red.svg.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "Kanal 7",
+        "url": "https://www.kanal7.com/canli-izle",
+        "logo": "https://cdn.kanal7.com/kanal7/wp-content/themes/kanal7/v2/images/kanal7-logo.svg"
+    },
+    {
+        "type": "playwright",
+        "ad": "Beyaz TV",
+        "url": "https://beyaztv.com.tr/canli-yayin",
+        "logo": "https://beyaztv.com.tr/images/logo.png"
+    },  
+    {
+        "type": "playwright",
+        "ad": "CNN Turk",
+        "url": "https://www.cnnturk.com/canli-yayin",
+        "logo": "https://static.cnnturk.com/images/header/cnnturk-new-logo.svg"
+    },  
+    {
+        "type": "playwright",
+        "ad": "Dream Turk",
+        "url": "https://www.dreamturk.com.tr/canli-yayin-izle",
+        "logo": "https://static.dreamturk.com.tr/assets/dist/images/dream-turk-logoV2.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "NR 1 Turk",
+        "url": "https://www.numberone.com.tr/2015/12/20/number1-turk-tv-canli-yayin/",
+        "logo": "https://www.numberone.com.tr/wp-content/uploads/2021/10/yeni-logonr1.png"
+    },  
+    {
+        "type": "playwright",
+        "ad": "Kral POP TV",
+        "url": "https://www.kralmuzik.com.tr/tv/kral-pop-tv",
+        "logo": "https://www.kralmuzik.com.tr/app/themes/kral/assets/images/kralmuzik_logo.png?v=2"
+    },  
+    {
+        "type": "direct",
+        "ad": "TRT Cocuk",
+        "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8",
+        "logo": "https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg"
+    },
+    {
+        "type": "playwright",
+        "ad": "Minika GO",
+        "url": "https://www.minikago.com.tr/webtv/canli-yayin",
+        "logo": "https://i.tmgrup.com.tr/mnka/go/site/Version1/i/logo.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "Minika Cocuk",
+        "url": "https://www.minikacocuk.com.tr/webtv/canli-yayin",
+        "logo": "https://images.seeklogo.com/logo-png/52/1/minika-cocuk-logo-png_seeklogo-520742.png"
     },
 ]
 
