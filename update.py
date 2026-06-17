@@ -99,16 +99,17 @@ def handle_trt(kanal, headers):
     except Exception as e:
         print(f'   [TRT Xətası]: {e}')
     return None
-
-def handle_show_turk(kanal, headers):
+    
+def handle_playwright(kanal, headers):
     """
-    Playwright brauzer simulyasiyası ilə şəbəkə loqlarını dinləyən
-    və hər dəfə 100% YENİ və təzə link qoparan canavar ovçu.
+    İstənilən kanalı Playwright ilə skan edib m3u8 linkini qoparan universal funksiya.
     """
-    print(f'   [Show Türk] Playwright brauzer ordusu başladıldı: {kanal["ad"]}')
+    print(f'   [Playwright] Brauzer işə salındı, hədəf: {kanal["ad"]}')
     
     m3u8_links = []
-    url = "https://www.showturk.com.tr/canli-yayin/"
+    
+    # Hər dəfə kanalın öz URL-i bura gələcək
+    url = kanal["url"]
 
     async def run_browser():
         async with async_playwright() as p:
@@ -118,39 +119,34 @@ def handle_show_turk(kanal, headers):
             )
             page = await browser.new_page()
 
-            # Brauzerin arxa planda etdiyi bütün şəbəkə sorğularını tuturuq
             def handle_response(response):
-                if ".m3u8" in response.url and "st=" in response.url:
+                # İstənilən m3u8 uzantısını tutur
+                if ".m3u8" in response.url:
                     m3u8_links.append(response.url)
 
             page.on("response", handle_response)
 
             try:
-                # Sayta giriş edib JavaScript-in işləməsini gözləyirik
-                await page.goto(url, timeout=45000, wait_until="domcontentloaded")
-                await page.wait_for_timeout(8000)
+                await page.goto(url, timeout=60000, wait_until="domcontentloaded")
+                await page.wait_for_timeout(15000)
             except Exception as e:
-                print(f"   [Show Türk Brauzer Xətası]: {e}")
+                print(f"   [Playwright Xətası]: {e}")
             finally:
                 await browser.close()
 
-    # Asinxron funksiyanı sinxron əsas kodun daxilində işə salırıq
     try:
         loop = asyncio.get_event_loop()
         loop.run_until_complete(run_browser())
     except Exception as e:
-        print(f"   [Show Türk Dövr Xətası]: {e}")
+        print(f"   [Playwright Dövr Xətası]: {e}")
 
-    # Əgər brauzer uğurla link tutubsa, pleylistə yazırıq
     if m3u8_links:
+        # Tapılan linklərdən birincisini götürürük
         taze_link = list(set(m3u8_links))[0].replace('\\', '')
-        print("   [Show Türk] Yepyeni dinamik bilet uğurla şəbəkədən sızdırıldı!")
         return taze_link
 
-    # Fövqəladə sığorta vəziyyəti (Əgər brauzer hansısa səbəbdən ilişərsə, pleylist boş qalmasın)
-    print("   [Show Türk] Brauzer link tuta bilmədi, statik sığorta xəttinə keçilir.")
-    return "https://ciner-live.ercdn.net/showturk/showturk_1080p.m3u8"
-    
+    return None
+
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
 # ==============================================================================
@@ -328,13 +324,13 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
     {
-        "type": "show_turk",
+        "type": "playwright",
         "ad": "Show Türk",
         "url": "https://www.showturk.com.tr/canli-yayin/",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/1920px-Show_Turk_logo.svg.png"
     },
     {
-        "type": "show_turk",
+        "type": "playwright",
         "ad": "Show Max",
         "url": "https://www.showmax.com.tr/canliyayin",
         "logo": "https://www.showmax.com.tr/assets/dist/images/base/logo.svg"
@@ -375,8 +371,8 @@ def main():
                     canli_link = handle_generic_scraper(kanal, headers)
                 elif kanal["type"] == "trt":
                     canli_link = handle_trt(kanal, headers)
-                elif kanal["type"] == "show_turk":
-                    canli_link = handle_show_turk(kanal, headers)
+                elif kanal["type"] == "playwright":
+                    canli_link = handle_playwright(kanal, headers)
 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
