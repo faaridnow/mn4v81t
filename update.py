@@ -334,6 +334,12 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/1920px-Show_Turk_logo.svg.png"
     },
     {
+        "type": "show_turk",
+        "ad": "Show Max",
+        "url": "https://www.showmax.com.tr/canliyayin",
+        "logo": "https://www.showmax.com.tr/assets/dist/images/base/logo.svg"
+    },
+    {
         "type": "generic_scraper",
         "ad": "NOW TV",
         "url": "https://www.nowtv.com.tr/canli-yayin",
