@@ -317,6 +317,12 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png"
     },
     {
+        "type": "playwright",
+        "ad": "TV8,5",
+        "url": "https://canlitv.com/tv85-izle",
+        "logo": "https://image.pngaaa.com/643/774643-middle.png"
+    },
+    {
         "type": "generic_scraper",
         "ad": "Show TV",
         "url": "https://www.showtv.com.tr/canli-yayin", 
