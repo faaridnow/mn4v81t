@@ -354,11 +354,23 @@ kanallar = [
         "logo": "https://beyaztv.com.tr/images/logo.png"
     },  
     {
-        "type": "playwright",
-        "ad": "CNN Turk",
-        "url": "https://www.cnnturk.com/canli-yayin",
-        "logo": "https://static.cnnturk.com/images/header/cnnturk-new-logo.svg"
+        "type": "generic_scraper",
+        "ad": "NTV",
+        "url": "https://puhutv.com/ntv-canli-yayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png"
     },  
+    {
+        "type": "generic_scraper",
+        "ad": "Haberturk",
+        "url": "https://www.haberturk.com/canliyayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png"
+    }, 
+    {
+        "type": "generic_scraper",
+        "ad": "360 TV",
+        "url": "https://www.tv360.com.tr/canli-yayin",
+        "logo": "https://static.wikia.nocookie.net/logopedia/images/3/37/360-tr.png/revision/latest?cb=20220108145523"
+    },   
     {
         "type": "playwright",
         "ad": "Dream Turk",
@@ -382,18 +394,6 @@ kanallar = [
         "ad": "TRT Cocuk",
         "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8",
         "logo": "https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg"
-    },
-    {
-        "type": "playwright",
-        "ad": "Minika GO",
-        "url": "https://www.minikago.com.tr/webtv/canli-yayin",
-        "logo": "https://i.tmgrup.com.tr/mnka/go/site/Version1/i/logo.png"
-    },
-    {
-        "type": "playwright",
-        "ad": "Minika Cocuk",
-        "url": "https://www.minikacocuk.com.tr/webtv/canli-yayin",
-        "logo": "https://images.seeklogo.com/logo-png/52/1/minika-cocuk-logo-png_seeklogo-520742.png"
     },
 ]
 
