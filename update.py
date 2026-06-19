@@ -336,6 +336,24 @@ kanallar = [
         "logo": "https://www.showmax.com.tr/assets/dist/images/base/logo.svg"
     },
     {
+        "type": "playwright",
+        "ad": "Star TV",
+        "url": "https://puhutv.com/star-tv-canli-yayin",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/9/92/Star_TV_.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "Euro Star",
+        "url": "https://www.eurostartv.com.tr/canli-izle",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/3/37/Euro_Star_logosu.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "ATV",
+        "url": "https://canlitv.com/atv-canli",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/45/Atv_logo_2010.svg"
+    },
+    {
         "type": "generic_scraper",
         "ad": "NOW TV",
         "url": "https://www.nowtv.com.tr/canli-yayin",
@@ -371,6 +389,12 @@ kanallar = [
         "url": "https://www.tv360.com.tr/canli-yayin",
         "logo": "https://static.wikia.nocookie.net/logopedia/images/3/37/360-tr.png/revision/latest?cb=20220108145523"
     },   
+    {
+        "type": "playwright",
+        "ad": "TRT Haber",
+        "url": "https://www.tabii.com/tr/watch/live/trthaber?trackId=150017",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/TRT_Haber_kurumsal_logo_%282013-2020%29.png"
+    },
     {
         "type": "playwright",
         "ad": "Dream Turk",
