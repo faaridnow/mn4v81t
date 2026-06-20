@@ -403,6 +403,18 @@ kanallar = [
     },
     {
         "type": "playwright",
+        "ad": "TRT Belgesel",
+        "url": "https://canlitv.com/trt-belgesel",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/b/ba/TRT_Belgesel_kurumsal_logo_%282015-2019%29.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "TRT Eba",
+        "url": "https://canlitv.com/trt-eba-tv",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/TRT_EBA_TV_logo.svg/1280px-TRT_EBA_TV_logo.svg.png"
+    },
+    {
+        "type": "playwright",
         "ad": "Dream Turk",
         "url": "https://www.dreamturk.com.tr/canli-yayin-izle",
         "logo": "https://static.dreamturk.com.tr/assets/dist/images/dream-turk-logoV2.png"
@@ -420,10 +432,22 @@ kanallar = [
         "logo": "https://www.kralmuzik.com.tr/app/themes/kral/assets/images/kralmuzik_logo.png?v=2"
     },  
     {
+        "type": "playwright",
+        "ad": "TRT Müzik",
+        "url": "https://canlitv.com/trt-muzik",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/TRT_M%C3%BCzik.svg/1280px-TRT_M%C3%BCzik.svg.png"
+    },
+    {
         "type": "direct",
         "ad": "TRT Cocuk",
         "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8",
         "logo": "https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg"
+    },
+    {
+        "type": "playwright",
+        "ad": "Minika GO",
+        "stream_url": "https://canlitv.com/minika-go-izle",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8a/MinikaGO.png"
     },
 ]
 
