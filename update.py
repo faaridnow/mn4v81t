@@ -445,6 +445,12 @@ kanallar = [
     },
     {
         "type": "playwright",
+        "ad": "Tivi 6",
+        "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin",
+        "logo": "https://yt3.googleusercontent.com/ZKyx43ZImypekZpHVC1nbvpKouIpK3GM7l1q3NTcHD0a6jbIdTJ4vEvhGvlj5vUiiLT3iHaQ=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+        "type": "playwright",
         "ad": "Dream Turk",
         "url": "https://www.dreamturk.com.tr/canli-yayin-izle",
         "logo": "https://static.dreamturk.com.tr/assets/dist/images/dream-turk-logoV2.png"
