@@ -186,12 +186,10 @@ kanallar = [
         "logo": "https://www.arbtv.az/assets/uploads/events/1.arbtv.png"
     },
     {
-        "type": "token_yoda",
-        "ad": "İctimai TV", 
-        "url": "https://yoda.az/",
-        "stream_base": "https://str.yodacdn.net/ictimaitv/tracks-v1a1/mono.ts.m3u8",
-        "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://itv.az/assets/images/itv-logo.png"
+        "type": "direct",
+        "ad": "İctimai TV",
+        "stream_url": "https://live.itv.az/itv.m3u8?bandwidth=3900&shift=0",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/34/%C4%B0ctimai_TV_%282019-2020%29.png"
     },
     {
         "type": "token_yoda",
@@ -448,6 +446,12 @@ kanallar = [
         "ad": "Tivi 6",
         "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin",
         "logo": "https://yt3.googleusercontent.com/ZKyx43ZImypekZpHVC1nbvpKouIpK3GM7l1q3NTcHD0a6jbIdTJ4vEvhGvlj5vUiiLT3iHaQ=s900-c-k-c0x00ffffff-no-rj"
+    },
+    {
+        "type": "playwright",
+        "ad": "Kanal 26",
+        "url": "https://canlitv.com/kanal-26",
+        "logo": "https://yt3.googleusercontent.com/hB59xjWpzY9iDQqKCoeO45QJ4FxfKsabCYU-m1zLfd5uXxEB3sCAPQd_Je-qczO0TWEcBjVY2DI=s900-c-k-c0x00ffffff-no-rj"
     },
     {
         "type": "playwright",
