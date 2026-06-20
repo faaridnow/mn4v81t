@@ -360,6 +360,12 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/4/45/Atv_logo_2010.svg"
     },
     {
+        "type": "playwright",
+        "ad": "A2 TV",
+        "url": "https://canlitv.com/canli-a2-izle",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/e/e8/A2_logosu.jpg"
+    },
+    {
         "type": "generic_scraper",
         "ad": "NOW TV",
         "url": "https://www.nowtv.com.tr/canli-yayin",
@@ -409,12 +415,6 @@ kanallar = [
     },
     {
         "type": "playwright",
-        "ad": "TRT Eba",
-        "url": "https://canlitv.com/trt-eba-tv",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/TRT_EBA_TV_logo.svg/1280px-TRT_EBA_TV_logo.svg.png"
-    },
-    {
-        "type": "playwright",
         "ad": "TRT Genç",
         "url": "https://canlitv.com/trt-genc",
         "logo": "https://kureansiklopedi.com/_next/image?url=https%3A%2F%2Fcdn.t3pedia.org%2Fmedia%2Fuploads%2F2026%2F01%2F20%2FZsrV3EGVajXtYe4434R06dvk6meyedRe.png&w=1280&q=75"
@@ -422,7 +422,7 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "TRT Türk",
-        "url": "https://canlitv.com/trt-genc",
+        "url": "https://canlitv.com/trt-turk",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/TRT_T%C3%BCrk_logosu.png"
     },
      {
@@ -430,6 +430,18 @@ kanallar = [
         "ad": "TRT Avaz",
         "url": "https://canlitv.com/trt-avaz",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/9/97/TRT_Avaz_logo_%282009-2020%29.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "Yaban TV",
+        "url": "https://canlitv.com/yaban-tv",
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/3/38/Yabantv_logo.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "Cine 1",
+        "url": "https://canlitv.com/cine-1",
+        "logo": "https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/cine-1-buyuk.png?rkt=DfS6Tgv6Hjr93k3"
     },
     {
         "type": "playwright",
