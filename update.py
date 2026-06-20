@@ -415,6 +415,24 @@ kanallar = [
     },
     {
         "type": "playwright",
+        "ad": "TRT Genç",
+        "url": "https://canlitv.com/trt-genc",
+        "logo": "https://kureansiklopedi.com/_next/image?url=https%3A%2F%2Fcdn.t3pedia.org%2Fmedia%2Fuploads%2F2026%2F01%2F20%2FZsrV3EGVajXtYe4434R06dvk6meyedRe.png&w=1280&q=75"
+    },
+    {
+        "type": "playwright",
+        "ad": "TRT Türk",
+        "url": "https://canlitv.com/trt-genc",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/TRT_T%C3%BCrk_logosu.png"
+    },
+     {
+        "type": "playwright",
+        "ad": "TRT Avaz",
+        "url": "https://canlitv.com/trt-avaz",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/97/TRT_Avaz_logo_%282009-2020%29.png"
+    },
+    {
+        "type": "playwright",
         "ad": "Dream Turk",
         "url": "https://www.dreamturk.com.tr/canli-yayin-izle",
         "logo": "https://static.dreamturk.com.tr/assets/dist/images/dream-turk-logoV2.png"
@@ -448,6 +466,12 @@ kanallar = [
         "ad": "Minika GO",
         "stream_url": "https://canlitv.com/minika-go-izle",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8a/MinikaGO.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "Cartoon Network",
+        "stream_url": "https://canlitv.com/cartoon-network",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg"
     },
 ]
 
