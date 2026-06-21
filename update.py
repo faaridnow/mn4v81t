@@ -434,9 +434,9 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3&w=250"
     },
     {
-        "type": "direct",
+        "type": "playwright",
         "ad": "Yaban TV",
-        "stream_url": "https://yayin1.canlitv.fun/canlitv/yabantv.stream/chunklist_w1649226700.m3u8",
+        "url": "https://www.yabantv.com/broadcast",
         "logo": "https://images.weserv.nl/?url=https://www.yabantv.com/public/img/ayar/yabantv_logo.png&w=250"
     },
     {
