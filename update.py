@@ -167,7 +167,7 @@ kanallar = [
         "url_referer": "https://aztv.az/",
         "stream_base": "https://str.yodacdn.net/idmantele/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%C4%B0dman_TV_%282019%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%C4%B0dman_TV_%282019%29.png/250px-%C4%B0dman_TV_%282019%29.png"
     },
     {
         "type": "token_yoda",
@@ -175,7 +175,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/xazartv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/0/05/Xazar_TV_Logo.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Xazar_TV_Logo.png/250px-Xazar_TV_Logo.png"
     },
     {
         "type": "token_yoda",
@@ -183,13 +183,13 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arb/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://www.arbtv.az/assets/uploads/events/1.arbtv.png"
+        "logo": "https://images.weserv.nl/?url=https://www.arbtv.az/assets/uploads/events/1.arbtv.png&w=250"
     },
     {
         "type": "direct",
         "ad": "İctimai TV",
         "stream_url": "https://live.itv.az/itv.m3u8?bandwidth=3900&shift=0",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/34/%C4%B0ctimai_TV_%282019-2020%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/%C4%B0ctimai_TV_%282019-2020%29.png/250px-%C4%B0ctimai_TV_%282019-2020%29.png"
     },
     {
         "type": "token_yoda",
@@ -197,7 +197,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/bakutv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Baku_TV_%282018%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Baku_TV_%282018%29.png/250px-Baku_TV_%282018%29.png"
     },
     {
         "type": "token_yoda",
@@ -205,7 +205,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/real/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Real_TV_loqosu_%282018%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Real_TV_loqosu_%282018%29.png/250px-Real_TV_loqosu_%282018%29.png"
     },
     {
         "type": "token_yoda",
@@ -213,7 +213,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arb24/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/74/ARB_24_logo1.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/ARB_24_logo1.png/250px-ARB_24_logo1.png"
     },
     {
         "type": "token_yoda",
@@ -221,7 +221,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/apatv/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://apagroup.az/storage/news/one/65e5c5252a1fc65e5c5252a1fd170955702965e5c5252a1fa65e5c5252a1fb.jpg"
+        "logo": "https://images.weserv.nl/?url=https://apagroup.az/storage/news/one/65e5c5252a1fc65e5c5252a1fd170955702965e5c5252a1fa65e5c5252a1fb.jpg&w=250"
     },
     {
         "type": "token_yoda",
@@ -229,7 +229,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/tmbaz/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://tmb.tv/wp-content/uploads/2025/01/tmbtaz-png.png"
+        "logo": "https://images.weserv.nl/?url=https://tmb.tv/wp-content/uploads/2025/01/tmbtaz-png.png&w=250"
     },
     {
         "type": "token_yoda",
@@ -237,7 +237,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/arbgunesh/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/f/fe/ARB_G%C3%BCn%C9%99%C5%9F_logo.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/ARB_G%C3%BCn%C9%99%C5%9F_logo.png/250px-ARB_G%C3%BCn%C9%99%C5%9F_logo.png"
     },
     {
         "type": "token_yoda",
@@ -252,7 +252,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/medeniyyettele/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/25/M%C9%99d%C9%99niyy%C9%99t_TV_%282019%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/M%C9%99d%C9%99niyy%C9%99t_TV_%282019%29.png/250px-M%C9%99d%C9%99niyy%C9%99t_TV_%282019%29.png"
     },
     {
         "type": "token_yoda",
@@ -267,7 +267,7 @@ kanallar = [
         "url": "https://yoda.az/",
         "stream_base": "https://str.yodacdn.net/mtvaz/tracks-v1a1/mono.ts.m3u8",
         "referer": "https://yodaplayer.yodacdn.net/",
-        "logo": "https://upload.wikimedia.org/wikipedia/en/a/a1/MTV_Azerbaijan_Logo.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/MTV_Azerbaijan_Logo.png/250px-MTV_Azerbaijan_Logo.png"
     },
     
     # ---- SABİT VƏ STATİK KANALLAR (Birbaşa linklər) ----
@@ -280,7 +280,7 @@ kanallar = [
         "type": "direct",
         "ad": "CBC Sport",
         "stream_url": "https://cbcsports-live.lg.mncdn.com/cbcsports_live/cbcsports/chunklist.m3u8",
-        "logo": "https://cbcsport.info/wp-content/uploads/2025/06/cbc_logo2-removebg-preview-300x275.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/az/thumb/0/04/CBC_Sport_TV_loqo.png/250px-CBC_Sport_TV_loqo.png"
     },
     
     # ---- DAİONCDN / API QRUPU KANALLARI ----
@@ -288,13 +288,13 @@ kanallar = [
         "type": "trt",
         "ad": "TRT 1",
         "url": "https://www.trtizle.com/canli-yayin/trt-1",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6c/TRT_1_logo_%282012-2021%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/TRT_1_logo_%282012-2021%29.png/250px-TRT_1_logo_%282012-2021%29.png"
     },
     {
         "type": "trt",
         "ad": "Kanal D",
         "url": "https://www.kanald.com.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/archive/4/4e/20240406161353%21Kanal_D.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4e/Kanal_D.png/250px-Kanal_D.png"
     },
     {
         "type": "trt",
@@ -306,19 +306,19 @@ kanallar = [
         "type": "playwright",
         "ad": "TV 2",
         "url": "https://www.tv2.com.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/a/ae/Tv2_logo_%282026%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/a/ae/Tv2_logo_%282026%29.png/250px-Tv2_logo_%282026%29.png"
     },
     {
         "type": "playwright",
         "ad": "TV8",
         "url": "https://www.tv8.com.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/6/68/Tv8_Yeni_Logo.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/68/Tv8_Yeni_Logo.png/250px-Tv8_Yeni_Logo.png]"
     },
     {
         "type": "playwright",
         "ad": "TV8,5",
         "url": "https://canlitv.com/tv85-izle",
-        "logo": "https://image.pngaaa.com/643/774643-middle.png"
+        "logo": "https://images.weserv.nl/?url=https://image.pngaaa.com/643/774643-middle.png&w=250"
     },
     {
         "type": "generic_scraper",
@@ -342,13 +342,13 @@ kanallar = [
         "type": "playwright",
         "ad": "Star TV",
         "url": "https://puhutv.com/star-tv-canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/9/92/Star_TV_.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/9/92/Star_TV_.png/250px-Star_TV_.png"
     },
     {
         "type": "playwright",
         "ad": "Euro Star",
         "url": "https://www.eurostartv.com.tr/canli-izle",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/3/37/Euro_Star_logosu.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/3/37/Euro_Star_logosu.png/250px-Euro_Star_logosu.png"
     },
     {
         "type": "playwright",
@@ -360,7 +360,7 @@ kanallar = [
         "type": "playwright",
         "ad": "A2 TV",
         "url": "https://canlitv.com/canli-a2-izle",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/e/e8/A2_logosu.jpg"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e8/A2_logosu.jpg/250px-A2_logosu.jpg"
     },
     {
         "type": "generic_scraper",
@@ -377,7 +377,7 @@ kanallar = [
         "type": "playwright",
         "ad": "Beyaz TV",
         "url": "https://beyaztv.com.tr/canli-yayin",
-        "logo": "https://beyaztv.com.tr/images/logo.png"
+        "logo": "https://images.weserv.nl/?url=https://beyaztv.com.tr/images/logo.png&w=250"
     },  
     {
         "type": "generic_scraper",
@@ -389,19 +389,19 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Haberturk",
         "url": "https://www.haberturk.com/canliyayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Haberturk_logo.png/250px-Haberturk_logo.png"
     }, 
     {
         "type": "generic_scraper",
         "ad": "360 TV",
         "url": "https://www.tv360.com.tr/canli-yayin",
-        "logo": "https://static.wikia.nocookie.net/logopedia/images/3/37/360-tr.png/revision/latest?cb=20220108145523"
+        "logo": "https://images.weserv.nl/?url=https://static.wikia.nocookie.net/logopedia/images/3/37/360-tr.png/revision/latest?cb=20220108145523&w=250"
     },   
     {
         "type": "playwright",
         "ad": "TRT Haber",
         "url": "https://www.tabii.com/tr/watch/live/trthaber?trackId=150017",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/TRT_Haber_kurumsal_logo_%282013-2020%29.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/TRT_Haber_kurumsal_logo_%282013-2020%29.png/250px-TRT_Haber_kurumsal_logo_%282013-2020%29.png"
     },
     {
         "type": "playwright",
@@ -413,13 +413,13 @@ kanallar = [
         "type": "playwright",
         "ad": "TRT Türk",
         "url": "https://canlitv.com/trt-turk",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/TRT_T%C3%BCrk_logosu.png"
+        "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbw482VP0KxtIJz0COUGOU7l7pVQrOmsVqww&s&w=250"
     }, 
     {
         "type": "playwright",
         "ad": "Cine 1",
         "url": "https://canlitv.com/cine-1",
-        "logo": "https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/cine-1-buyuk.png?rkt=DfS6Tgv6Hjr93k3"
+        "logo": "https://images.weserv.nl/?url=https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/cine-1-buyuk.png?rkt=DfS6Tgv6Hjr93k3&w=250"
     },
     {
         "type": "playwright",
@@ -431,19 +431,19 @@ kanallar = [
         "type": "playwright",
         "ad": "Kanal 26",
         "url": "https://canlitv.com/kanal-26",
-        "logo": "https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3"
+        "logo": "https://images.weserv.nl/?url=https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3&w=250"
     },
     {
         "type": "playwright",
         "ad": "Yaban TV",
         "url": "https://www.yabantv.com/broadcast",
-        "logo": "https://www.yabantv.com/public/img/ayar/yabantv_logo.png"
+        "logo": "https://images.weserv.nl/?url=https://www.yabantv.com/public/img/ayar/yabantv_logo.png&w=250"
     },
     {
         "type": "playwright",
         "ad": "DMAX Türkiye",
         "url": "https://canlitv.com/dmax-canli-yayin",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeVj2mkN2b-YawhB9oyy24nwZUldYlRfnKg&s"
+        "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeVj2mkN2b-YawhB9oyy24nwZUldYlRfnKg&s&w=250"
     },
     {
         "type": "direct",
@@ -455,19 +455,19 @@ kanallar = [
         "type": "playwright",
         "ad": "Dream Turk",
         "url": "https://www.dreamturk.com.tr/canli-yayin-izle",
-        "logo": "https://static.dreamturk.com.tr/assets/dist/images/dream-turk-logoV2.png"
+        "logo": "https://images.weserv.nl/?url=https://static.dreamturk.com.tr/assets/dist/images/dream-turk-logoV2.png&w=250"
     },
     {
         "type": "playwright",
         "ad": "NR 1 Turk",
         "url": "https://www.numberone.com.tr/2015/12/20/number1-turk-tv-canli-yayin/",
-        "logo": "https://www.numberone.com.tr/wp-content/uploads/2021/10/yeni-logonr1.png"
+        "logo": "https://images.weserv.nl/?url=https://www.numberone.com.tr/wp-content/uploads/2021/10/yeni-logonr1.png&w=250"
     },  
     {
         "type": "playwright",
         "ad": "Kral POP TV",
         "url": "https://www.kralmuzik.com.tr/tv/kral-pop-tv",
-        "logo": "https://www.kralmuzik.com.tr/app/themes/kral/assets/images/kralmuzik_logo.png?v=2"
+        "logo": "https://images.weserv.nl/?url=https://www.kralmuzik.com.tr/app/themes/kral/assets/images/kralmuzik_logo.png?v=2&w=250"
     },  
     {
         "type": "playwright",
