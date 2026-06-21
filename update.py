@@ -312,7 +312,7 @@ kanallar = [
         "type": "playwright",
         "ad": "TV8",
         "url": "https://www.tv8.com.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/68/Tv8_Yeni_Logo.png/250px-Tv8_Yeni_Logo.png]"
+        "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/6/68/Tv8_Yeni_Logo.png/250px-Tv8_Yeni_Logo.png"
     },
     {
         "type": "playwright",
@@ -413,7 +413,7 @@ kanallar = [
         "type": "playwright",
         "ad": "TRT Türk",
         "url": "https://canlitv.com/trt-turk",
-        "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbw482VP0KxtIJz0COUGOU7l7pVQrOmsVqww&s&w=250"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/TRT_T%C3%BCrk_logosu.png/250px-TRT_T%C3%BCrk_logosu.png"
     }, 
     {
         "type": "playwright",
@@ -437,7 +437,7 @@ kanallar = [
         "type": "direct",
         "ad": "Yaban TV",
         "stream_url": "https://yayin1.canlitv.fun/canlitv/yabantv.stream/chunklist_w1649226700.m3u8",
-        "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
+        "logo": "https://images.weserv.nl/?url=https://www.yabantv.com/public/img/ayar/yabantv_logo.png&w=250"
     },
     {
         "type": "playwright",
