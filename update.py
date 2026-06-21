@@ -434,10 +434,10 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3&w=250"
     },
     {
-        "type": "playwright",
+        "type": "direct",
         "ad": "Yaban TV",
-        "url": "https://www.yabantv.com/broadcast",
-        "logo": "https://images.weserv.nl/?url=https://www.yabantv.com/public/img/ayar/yabantv_logo.png&w=250"
+        "stream_url": "https://yayin1.canlitv.fun/canlitv/yabantv.stream/chunklist_w1649226700.m3u8",
+        "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
     },
     {
         "type": "playwright",
@@ -466,7 +466,7 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "Kral POP TV",
-        "url": "https://www.kralmuzik.com.tr/tv/kral-pop-tv",
+        "url": "https://puhutv.com/kral-pop-tv-canli-yayin",
         "logo": "https://images.weserv.nl/?url=https://www.kralmuzik.com.tr/app/themes/kral/assets/images/kralmuzik_logo.png?v=2&w=250"
     },  
     {
