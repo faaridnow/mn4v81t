@@ -424,7 +424,7 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "Tivi 6",
-        "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin"
+        "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin",
         "logo": "https://images.weserv.nl/?url=https://tivi6.com.tr/uploads/settings/2026/03/69b468997c5a5_1773430937.jpeg&w=250"
     },
     {
@@ -478,7 +478,7 @@ kanallar = [
     {
         "type": "direct",
         "ad": "TRT Cocuk",
-        "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8"
+        "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8",
         "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
     },
 ]
