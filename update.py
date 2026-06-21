@@ -300,7 +300,7 @@ kanallar = [
         "type": "trt",
         "ad": "Euro D",
         "url": "https://www.eurod.net.tr/canli-yayin",
-        "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest?cb=20220108144208"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Euro_D_logo.png/250px-Euro_D_logo.png"
     },
     {
         "type": "playwright",
@@ -331,13 +331,12 @@ kanallar = [
         "type": "playwright",
         "ad": "Show Türk",
         "url": "https://www.showturk.com.tr/canli-yayin/",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/1920px-Show_Turk_logo.svg.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/250px-Show_Turk_logo.svg.png"
     },
     {
         "type": "playwright",
         "ad": "Show Max",
-        "url": "https://www.showmax.com.tr/canliyayin",
-        "logo": "https://www.showmax.com.tr/assets/dist/images/base/logo.svg"
+        "url": "https://www.showmax.com.tr/canliyayin"
     },
     {
         "type": "playwright",
@@ -355,7 +354,7 @@ kanallar = [
         "type": "playwright",
         "ad": "ATV",
         "url": "https://canlitv.com/atv-canli",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/45/Atv_logo_2010.svg"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Atv_logo_2010.svg/250px-Atv_logo_2010.svg.png"
     },
     {
         "type": "playwright",
@@ -367,13 +366,12 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "NOW TV",
         "url": "https://www.nowtv.com.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NOW_TV_%28Turkey%29_wordmark-red.svg/1280px-NOW_TV_%28Turkey%29_wordmark-red.svg.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NOW_TV_%28Turkey%29_wordmark-red.svg/250px-NOW_TV_%28Turkey%29_wordmark-red.svg.png"
     },
     {
         "type": "playwright",
         "ad": "Kanal 7",
-        "url": "https://www.kanal7.com/canli-izle",
-        "logo": "https://cdn.kanal7.com/kanal7/wp-content/themes/kanal7/v2/images/kanal7-logo.svg"
+        "url": "https://www.kanal7.com/canli-izle"
     },
     {
         "type": "playwright",
@@ -385,7 +383,7 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "NTV",
         "url": "https://puhutv.com/ntv-canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/960px-NTV_%28Turkey%29_logo.svg.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/NTV_%28Turkey%29_logo.svg/250px-NTV_%28Turkey%29_logo.svg.png"
     },  
     {
         "type": "generic_scraper",
@@ -407,34 +405,16 @@ kanallar = [
     },
     {
         "type": "playwright",
-        "ad": "TRT Belgesel",
-        "url": "https://canlitv.com/trt-belgesel",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/b/ba/TRT_Belgesel_kurumsal_logo_%282015-2019%29.png"
-    },
-    {
-        "type": "playwright",
         "ad": "TRT Genç",
         "url": "https://canlitv.com/trt-genc",
-        "logo": "https://kureansiklopedi.com/_next/image?url=https%3A%2F%2Fcdn.t3pedia.org%2Fmedia%2Fuploads%2F2026%2F01%2F20%2FZsrV3EGVajXtYe4434R06dvk6meyedRe.png&w=1280&q=75"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbw482VP0KxtIJz0COUGOU7l7pVQrOmsVqww&s"
     },
     {
         "type": "playwright",
         "ad": "TRT Türk",
         "url": "https://canlitv.com/trt-turk",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/TRT_T%C3%BCrk_logosu.png"
-    },
-     {
-        "type": "playwright",
-        "ad": "TRT Avaz",
-        "url": "https://canlitv.com/trt-avaz",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/97/TRT_Avaz_logo_%282009-2020%29.png"
-    },
-    {
-        "type": "playwright",
-        "ad": "Yaban TV",
-        "url": "https://canlitv.com/yaban-tv",
-        "logo": "https://upload.wikimedia.org/wikipedia/tr/3/38/Yabantv_logo.png"
-    },
+    }, 
     {
         "type": "playwright",
         "ad": "Cine 1",
@@ -444,14 +424,31 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "Tivi 6",
-        "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin",
-        "logo": "https://yt3.googleusercontent.com/ZKyx43ZImypekZpHVC1nbvpKouIpK3GM7l1q3NTcHD0a6jbIdTJ4vEvhGvlj5vUiiLT3iHaQ=s900-c-k-c0x00ffffff-no-rj"
+        "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin"
     },
     {
         "type": "playwright",
         "ad": "Kanal 26",
-        "url": "https://canlitv.com/kanal-26",
-        "logo": "https://yt3.googleusercontent.com/hB59xjWpzY9iDQqKCoeO45QJ4FxfKsabCYU-m1zLfd5uXxEB3sCAPQd_Je-qczO0TWEcBjVY2DI=s900-c-k-c0x00ffffff-no-rj"
+        "url": "https://canlitv.com/kanal-26"
+        "logo": "https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3"
+    },
+    {
+        "type": "playwright",
+        "ad": "Yaban TV",
+        "url": "https://www.yabantv.com/broadcast"
+        "logo": "https://www.yabantv.com/public/img/ayar/yabantv_logo.png"
+    },
+    {
+        "type": "playwright",
+        "ad": "DMAX Türkiye",
+        "url": "https://canlitv.com/dmax-canli-yayin"
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeVj2mkN2b-YawhB9oyy24nwZUldYlRfnKg&s"
+    },
+    {
+        "type": "direct",
+        "ad": "TRT Belgesel",
+        "stream_url": "https://tv-trtbelgesel-dai.medya.trt.com.tr/master_3.m3u8",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TRT_Belgesel_logo_%282019-%29.svg/250px-TRT_Belgesel_logo_%282019-%29.svg.png"
     },
     {
         "type": "playwright",
@@ -475,25 +472,12 @@ kanallar = [
         "type": "playwright",
         "ad": "TRT Müzik",
         "url": "https://canlitv.com/trt-muzik",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/TRT_M%C3%BCzik.svg/1280px-TRT_M%C3%BCzik.svg.png"
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/TRT_M%C3%BCzik.svg/250px-TRT_M%C3%BCzik.svg.png"
     },
     {
         "type": "direct",
         "ad": "TRT Cocuk",
-        "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8",
-        "logo": "https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg"
-    },
-    {
-        "type": "playwright",
-        "ad": "Minika GO",
-        "stream_url": "https://canlitv.com/minika-go-izle",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8a/MinikaGO.png"
-    },
-    {
-        "type": "playwright",
-        "ad": "Cartoon Network",
-        "stream_url": "https://canlitv.com/cartoon-network",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/80/Cartoon_Network_2010_logo.svg"
+        "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8"
     },
 ]
 
