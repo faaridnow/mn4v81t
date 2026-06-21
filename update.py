@@ -300,7 +300,7 @@ kanallar = [
         "type": "trt",
         "ad": "Euro D",
         "url": "https://www.eurod.net.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Euro_D_logo.png/250px-Euro_D_logo.png"
+        "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest/scale-to-width-down/250?cb=20220108144208"
     },
     {
         "type": "playwright",
@@ -425,6 +425,7 @@ kanallar = [
         "type": "playwright",
         "ad": "Tivi 6",
         "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin"
+        "logo": "https://images.weserv.nl/?url=https://tivi6.com.tr/uploads/settings/2026/03/69b468997c5a5_1773430937.jpeg&w=250"
     },
     {
         "type": "playwright",
@@ -478,6 +479,7 @@ kanallar = [
         "type": "direct",
         "ad": "TRT Cocuk",
         "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8"
+        "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
     },
 ]
 
