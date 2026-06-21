@@ -429,19 +429,19 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "Kanal 26",
-        "url": "https://canlitv.com/kanal-26"
+        "url": "https://canlitv.com/kanal-26",
         "logo": "https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3"
     },
     {
         "type": "playwright",
         "ad": "Yaban TV",
-        "url": "https://www.yabantv.com/broadcast"
+        "url": "https://www.yabantv.com/broadcast",
         "logo": "https://www.yabantv.com/public/img/ayar/yabantv_logo.png"
     },
     {
         "type": "playwright",
         "ad": "DMAX Türkiye",
-        "url": "https://canlitv.com/dmax-canli-yayin"
+        "url": "https://canlitv.com/dmax-canli-yayin",
         "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeVj2mkN2b-YawhB9oyy24nwZUldYlRfnKg&s"
     },
     {
