@@ -174,9 +174,9 @@ def handle_m3u8_scraper(kanal):
             page.on("response", handle_response)
 
             await page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            await page.wait_for_timeout(5000)
+            await page.wait_for_timeout(2000)
             await page.mouse.click(640, 360)
-            await page.wait_for_timeout(8000)
+            await page.wait_for_timeout(3000)
             await browser.close()
 
     try:
@@ -552,9 +552,51 @@ kanallar = [
     },
     {
     "type": "m3u8_scraper",
+    "ad": "Match TV",
+    "url": "https://ritsatv.ru/movie-id900973-match",
+    "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNRDrjRDKEJdaypnmg-uVj5CwXqGj1zCFtv36pp669w&s=10&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "Setanta Sports 1",
+    "url": "https://ritsatv.ru/movie-id900982-setanta-1",
+    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900982.jpg&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "Setanta Sports 2",
+    "url": "https://ritsatv.ru/movie-id900983-setanta-2",
+    "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFR8wvcpZvK--w75DSnZM0Nloq8Rf7LJQqSSBvWWdTw3F62qT13t6NgDS8&s=10&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
     "ad": "Eurosport 1",
     "url": "https://ritsatv.ru/movie-id900967-eurosport-1",
-    "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
+    "logo": "https://wsrv.nl/?url=https://images.seeklogo.com/logo-png/40/1/eurosport-logo-png_seeklogo-407861.png&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "Eurosport 2",
+    "url": "https://ritsatv.ru/movie-id900968-eurosport-2",
+    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900968.jpg&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "TNT Sports 1",
+    "url": "https://ritsatv.ru/movie-id901126-tnt-sports-1",
+    "logo": "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TNT_Sports_%282023%29.svg/960px-TNT_Sports_%282023%29.svg.png&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "TNT Sports 2",
+    "url": "https://ritsatv.ru/movie-id901269-tnt-sports-2",
+    "logo": "https://wsrv.nl/?url=https://media.info/l/o/1/1540.1690027877.png&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "TNT Sports Premium",
+    "url": "https://ritsatv.ru/movie-id901490-tnt-sports-premium",
+    "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJ23KApagRAkNj-zS1Q9nhxox2bTwTx12WWRLT03EJg&s&w=250"
     },
 ]
 
