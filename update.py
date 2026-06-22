@@ -8,6 +8,7 @@ nest_asyncio.apply()
 import requests
 import re
 import sys
+import urllib.parse
 
 # ==============================================================================
 # HƏR TİP ÜÇÜN XÜSUSİ METODLAR (HANDLERS)
@@ -146,6 +147,74 @@ def handle_playwright(kanal, headers):
         return taze_link
 
     return None
+
+def handle_m3u8_scraper(kanal):
+    """
+    Tip 5: Playwright ilə şəbəkə trafikini izləyərək ən yüksək keyfiyyətli
+    m3u8 linkini avtomatik seçən universal skraper (yepyeni_metod).
+    """
+    print(f'   [M3U8 Scraper] Brauzer işə salındı, hədəf: {kanal["ad"]}')
+    
+    url = kanal["url"]
+    found_links = set()
+
+    async def run():
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=["--no-sandbox", "--disable-setuid-sandbox"]
+            )
+            context = await browser.new_context(viewport={"width": 1280, "height": 720})
+            page = await context.new_page()
+
+            def handle_response(response):
+                if ".m3u8" in response.url:
+                    found_links.add(response.url)
+
+            page.on("response", handle_response)
+
+            await page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            await page.wait_for_timeout(5000)
+            await page.mouse.click(640, 360)
+            await page.wait_for_timeout(8000)
+            await browser.close()
+
+    try:
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(run())
+    except Exception as e:
+        print(f"   [M3U8 Scraper Xətası]: {e}")
+        return None
+
+    if not found_links:
+        return None
+
+    # Linkləri təmizlə
+    cleaned_links = set()
+    for raw_link in found_links:
+        clean = raw_link.split("?file=")[1] if "?file=" in raw_link else raw_link
+        clean = urllib.parse.unquote(clean)
+        if " or " in clean:
+            clean = clean.split(" or ")[0]
+        cleaned_links.add(clean)
+
+    # Ən yüksək bitreyti seç
+    best_link = None
+    max_bitrate = -1
+    for link in cleaned_links:
+        match = re.search(r"video=(\d+)", link)
+        if match:
+            bitrate = int(match.group(1))
+            if bitrate > max_bitrate:
+                max_bitrate = bitrate
+                best_link = link
+
+    # Fallback: index.m3u8 olan linki seç
+    if not best_link:
+        index_links = [l for l in cleaned_links if "index.m3u8" in l and "poster" not in l]
+        best_link = index_links[0] if index_links else (list(cleaned_links)[0] if cleaned_links else None)
+
+    return best_link
 
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
@@ -481,6 +550,12 @@ kanallar = [
         "stream_url": "https://tv-trtcocuk.medya.trt.com.tr/master_1440.m3u8",
         "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
     },
+    {
+    "type": "m3u8_scraper",
+    "ad": "Eurosport 1",
+    "url": "https://ritsatv.ru/movie-id900967-eurosport-1",
+    "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
+    },
 ]
 
 # ==============================================================================
@@ -513,6 +588,8 @@ def main():
                     canli_link = handle_trt(kanal, headers)
                 elif kanal["type"] == "playwright":
                     canli_link = handle_playwright(kanal, headers)
+                elif kanal["type"] == "m3u8_scraper":
+                    canli_link = handle_m3u8_scraper(kanal)
 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
