@@ -551,6 +551,60 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
     },
     {
+    "type": "playwright",
+    "ad": "Россия 1",
+    "url": "https://smotret.tv/rossiya-1",
+    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rossiya-1_Logo.svg/1280px-Rossiya-1_Logo.svg.png&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "Первый канал",
+    "url": "https://ritsatv.ru/movie-id300104-pervyi-kanal",
+    "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
+    },
+    {
+    "type": "playwright",
+    "ad": "Россия РТР",
+    "url": "https://smotret.tv/rossiya-rtr",
+    "logo": "https://images.weserv.nl/?url=https://telekanaly.com/images/rossiya-rtr.webp&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "МИР 24",
+    "url": "https://ritsatv.ru/movie-id901232-mir-tv",
+    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png/250px-%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "ТНТ",
+    "url": "https://ritsatv.ru/movie-id300118-tnt",
+    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_tnt.png&w=250"
+    }
+    {
+    "type": "m3u8_scraper",
+    "ad": "Ю ТВ",
+    "url": "https://ritsatv.ru/movie-id900226-telekanal-yu",
+    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/8/8f/%D0%AE_2020.webp&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "Animal Planet",
+    "url": "https://ritsatv.ru/movie-id600613-animal-planet",
+    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/2/20/2018_Animal_Planet_logo.svg&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "National Geographic",
+    "url": "https://ritsatv.ru/movie-id901184-national-geographic",
+    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/medium/901184.webp&w=250"
+    },
+    {
+    "type": "m3u8_scraper",
+    "ad": "National Geo Wild",
+    "url": "https://ritsatv.ru/movie-id300230-nat-geo-wild",
+    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/300230.webp&w=250"
+    },
+    {
     "type": "m3u8_scraper",
     "ad": "Match TV",
     "url": "https://ritsatv.ru/movie-id900973-match",
