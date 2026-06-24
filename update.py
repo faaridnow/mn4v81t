@@ -579,7 +579,7 @@ kanallar = [
     "ad": "ТНТ",
     "url": "https://ritsatv.ru/movie-id300118-tnt",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_tnt.png&w=250"
-    }
+    },
     {
     "type": "m3u8_scraper",
     "ad": "Ю ТВ",
