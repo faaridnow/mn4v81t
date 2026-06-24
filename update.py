@@ -575,6 +575,18 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png/250px-%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png&w=250"
     },
     {
+    "type": "playwright",
+    "ad": "НТВ",
+    "url": "https://rutube.ru/live/video/c37cd74192c6bc3d6cd6077c0c4fd686/",
+    "logo": "https://pic.rtbcdn.ru/user/1f/ec/1fec36d83dfaabbf819c84a5cb044858.jpg?size=s"
+    },
+    {
+    "type": "playwright",
+    "ad": "Суббота",
+    "url": "https://rutube.ru/live/video/310744c10a5809da38aa445c952976da/",
+    "logo": "https://pic.rtbcdn.ru/user/dd/0e/dd0e078410ed58d778b38164b3ccdc0d.jpg?size=s"
+    },
+    {
     "type": "m3u8_scraper",
     "ad": "ТНТ",
     "url": "https://ritsatv.ru/movie-id300118-tnt",
