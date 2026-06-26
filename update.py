@@ -655,15 +655,15 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/h2hd.jpg&w=250"
     },
     {
-        "type": "generic_scraper",
+        "type": "universal_scraper",
         "ad": "Nat Geo Wild HD",
-        "url": "http://rutv.pw/natgeowildhd",
+        "url": "https://ritsatv.ru/movie-id300230-nat-geo-wild",
         "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/300230.webp&w=250"
     },
     {
-        "type": "generic_scraper",
+        "type": "universal_scraper",
         "ad": "National Geographic HD",
-        "url": "http://rutv.pw/natgeohd",
+        "url": "https://ritsatv.ru/movie-id901184-national-geographic",
         "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/medium/901184.webp&w=250"
     },
     {
