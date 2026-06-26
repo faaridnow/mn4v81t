@@ -9,6 +9,7 @@ import requests
 import re
 import sys
 import urllib.parse
+import aiohttp
 
 # ==============================================================================
 # HƏR TİP ÜÇÜN XÜSUSİ METODLAR (HANDLERS)
@@ -148,74 +149,92 @@ def handle_playwright(kanal, headers):
 
     return None
 
-def handle_m3u8_scraper(kanal):
+# ==============================================================================
+# YENİ METOD: UNIVERSAL M3U8 SCRAPER (check_link_alive ilə)
+# ==============================================================================
+def clean_link(raw):
+    """URL-i təmizləyir."""
+    if "?file=" in raw:
+        raw = raw.split("?file=")[1]
+    raw = urllib.parse.unquote(raw)
+    if " or " in raw:
+        raw = raw.split(" or ")[0]
+    return raw.strip()
+
+def is_stable(link):
+    """Token olmayan stabil linki müəyyən edir."""
+    unstable_patterns = ["bpk-token", "beetv.kz"]
+    return not any(p in link for p in unstable_patterns)
+
+async def check_link_alive(link, timeout=10, referer=None):
+    """HEAD request ilə linkin işlək olduğunu yoxlayır."""
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; StreamChecker/1.0)",
+        }
+        if referer:
+            headers["Referer"] = referer
+        async with aiohttp.ClientSession() as session:
+            async with session.head(link, headers=headers, timeout=aiohttp.ClientTimeout(total=timeout), allow_redirects=True) as resp:
+                return resp.status in (200, 206)
+    except Exception:
+        return False
+
+async def _universal_scraper_async(url):
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox"]
+        )
+        context = await browser.new_context(viewport={"width": 1280, "height": 720})
+        page = await context.new_page()
+        found_links = set()
+
+        def handle_response(response):
+            if ".m3u8" in response.url:
+                found_links.add(response.url)
+
+        page.on("response", handle_response)
+        await page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        await page.wait_for_timeout(5000)
+        await page.mouse.click(640, 360)
+        await page.wait_for_timeout(8000)
+        await browser.close()
+        return list(found_links)
+
+async def _get_best_stream_async(url):
+    raw_links = await _universal_scraper_async(url)
+    cleaned = list(set(clean_link(l) for l in raw_links))
+    stable_links = [l for l in cleaned if is_stable(l)]
+    fallback_links = [l for l in cleaned if not is_stable(l)]
+
+    # Referer kimi kanalın öz URL-i istifadə olunur
+    parsed = urllib.parse.urlparse(url)
+    referer = f"{parsed.scheme}://{parsed.netloc}/"
+
+    for link in stable_links:
+        if await check_link_alive(link, referer=referer):
+            return link
+    for link in fallback_links:
+        if await check_link_alive(link, referer=referer):
+            return link
+    return None
+
+def handle_universal_scraper(kanal):
     """
-    Tip 5: Playwright ilə şəbəkə trafikini izləyərək ən yüksək keyfiyyətli
-    m3u8 linkini avtomatik seçən universal skraper (yepyeni_metod).
+    Tip 7: Stabil linki tapmaq üçün check_link_alive yoxlaması ilə
+    universal Playwright scraper. Referer avtomatik olaraq kanalın
+    öz saytından götürülür.
     """
-    print(f'   [M3U8 Scraper] Brauzer işə salındı, hədəf: {kanal["ad"]}')
-    
+    print(f'   [Universal Scraper] Başladı: {kanal["ad"]}')
     url = kanal["url"]
-    found_links = set()
-
-    async def run():
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(
-                headless=True,
-                args=["--no-sandbox", "--disable-setuid-sandbox"]
-            )
-            context = await browser.new_context(viewport={"width": 1280, "height": 720})
-            page = await context.new_page()
-
-            def handle_response(response):
-                if ".m3u8" in response.url:
-                    found_links.add(response.url)
-
-            page.on("response", handle_response)
-
-            await page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            await page.wait_for_timeout(2000)
-            await page.mouse.click(640, 360)
-            await page.wait_for_timeout(3000)
-            await browser.close()
-
     try:
         loop = asyncio.get_event_loop()
-        loop.run_until_complete(run())
+        result = loop.run_until_complete(_get_best_stream_async(url))
+        return result
     except Exception as e:
-        print(f"   [M3U8 Scraper Xətası]: {e}")
+        print(f"   [Universal Scraper Xətası]: {e}")
         return None
-
-    if not found_links:
-        return None
-
-    # Linkləri təmizlə
-    cleaned_links = set()
-    for raw_link in found_links:
-        clean = raw_link.split("?file=")[1] if "?file=" in raw_link else raw_link
-        clean = urllib.parse.unquote(clean)
-        if " or " in clean:
-            clean = clean.split(" or ")[0]
-        cleaned_links.add(clean)
-
-    # Ən yüksək bitreyti seç
-    best_link = None
-    max_bitrate = -1
-    for link in cleaned_links:
-        match = re.search(r"video=(\d+)", link)
-        if match:
-            bitrate = int(match.group(1))
-            if bitrate > max_bitrate:
-                max_bitrate = bitrate
-                best_link = link
-
-    # Fallback: index.m3u8 olan linki seç
-    if not best_link:
-        index_links = [l for l in cleaned_links if "index.m3u8" in l and "poster" not in l]
-        best_link = index_links[0] if index_links else (list(cleaned_links)[0] if cleaned_links else None)
-
-    return best_link
-
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
 # ==============================================================================
@@ -474,12 +493,6 @@ kanallar = [
     },
     {
         "type": "playwright",
-        "ad": "TRT Genç",
-        "url": "https://canlitv.com/trt-genc",
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbw482VP0KxtIJz0COUGOU7l7pVQrOmsVqww&s"
-    },
-    {
-        "type": "playwright",
         "ad": "TRT Türk",
         "url": "https://canlitv.com/trt-turk",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/TRT_T%C3%BCrk_logosu.png/250px-TRT_T%C3%BCrk_logosu.png"
@@ -557,7 +570,7 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rossiya-1_Logo.svg/1280px-Rossiya-1_Logo.svg.png&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "Первый канал",
     "url": "https://ritsatv.ru/movie-id300104-pervyi-kanal",
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
@@ -569,7 +582,7 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://telekanaly.com/images/rossiya-rtr.webp&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "МИР 24",
     "url": "https://ritsatv.ru/movie-id901232-mir-tv",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png/250px-%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png&w=250"
@@ -593,13 +606,13 @@ kanallar = [
     "logo": "https://pic.rtbcdn.ru/user/dd/0e/dd0e078410ed58d778b38164b3ccdc0d.jpg?size=s"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "ТНТ",
     "url": "https://ritsatv.ru/movie-id300118-tnt",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_tnt.png&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "Ю ТВ",
     "url": "https://ritsatv.ru/movie-id900226-telekanal-yu",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/8/8f/%D0%AE_2020.webp&w=250"
@@ -852,19 +865,19 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/uspeh.jpg&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "Match TV",
     "url": "https://ritsatv.ru/movie-id900973-match",
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNRDrjRDKEJdaypnmg-uVj5CwXqGj1zCFtv36pp669w&s=10&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "Setanta Sports 1",
     "url": "https://ritsatv.ru/movie-id900982-setanta-1",
     "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900982.jpg&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "Setanta Sports 2",
     "url": "https://ritsatv.ru/movie-id900983-setanta-2",
     "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFR8wvcpZvK--w75DSnZM0Nloq8Rf7LJQqSSBvWWdTw3F62qT13t6NgDS8&s=10&w=250"
@@ -882,19 +895,19 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900968.jpg&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "TNT Sports 1",
     "url": "https://ritsatv.ru/movie-id901126-tnt-sports-1",
     "logo": "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TNT_Sports_%282023%29.svg/960px-TNT_Sports_%282023%29.svg.png&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "TNT Sports 2",
     "url": "https://ritsatv.ru/movie-id901269-tnt-sports-2",
     "logo": "https://wsrv.nl/?url=https://media.info/l/o/1/1540.1690027877.png&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "universal_scraper",
     "ad": "TNT Sports Premium",
     "url": "https://ritsatv.ru/movie-id901490-tnt-sports-premium",
     "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJ23KApagRAkNj-zS1Q9nhxox2bTwTx12WWRLT03EJg&s&w=250"
@@ -1349,8 +1362,8 @@ def main():
                     canli_link = handle_trt(kanal, headers)
                 elif kanal["type"] == "playwright":
                     canli_link = handle_playwright(kanal, headers)
-                elif kanal["type"] == "m3u8_scraper":
-                    canli_link = handle_m3u8_scraper(kanal)
+                elif kanal["type"] == "universal_scraper":
+                    canli_link = handle_universal_scraper(kanal)
 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
