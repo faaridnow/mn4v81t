@@ -9,7 +9,6 @@ import requests
 import re
 import sys
 import urllib.parse
-import aiohttp
 
 # ==============================================================================
 # HƏR TİP ÜÇÜN XÜSUSİ METODLAR (HANDLERS)
@@ -152,6 +151,8 @@ def handle_playwright(kanal, headers):
 # ==============================================================================
 # YENİ METOD: UNIVERSAL M3U8 SCRAPER (check_link_alive ilə)
 # ==============================================================================
+import aiohttp
+
 def clean_link(raw):
     """URL-i təmizləyir."""
     if "?file=" in raw:
