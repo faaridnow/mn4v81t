@@ -506,27 +506,9 @@ kanallar = [
     },
     {
         "type": "playwright",
-        "ad": "Tivi 6",
-        "url": "https://tivi6.com.tr/sayfa/https-tivi6-com-tr-sayfa-canli-yayin",
-        "logo": "https://images.weserv.nl/?url=https://tivi6.com.tr/uploads/settings/2026/03/69b468997c5a5_1773430937.jpeg&w=250"
-    },
-    {
-        "type": "playwright",
         "ad": "Kanal 26",
         "url": "https://canlitv.com/kanal-26",
         "logo": "https://images.weserv.nl/?url=https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3&w=250"
-    },
-    {
-        "type": "playwright",
-        "ad": "Yaban TV",
-        "url": "https://www.yabantv.com/broadcast",
-        "logo": "https://images.weserv.nl/?url=https://www.yabantv.com/public/img/ayar/yabantv_logo.png&w=250"
-    },
-    {
-        "type": "playwright",
-        "ad": "DMAX Türkiye",
-        "url": "https://canlitv.com/dmax-canli-yayin",
-        "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDeVj2mkN2b-YawhB9oyy24nwZUldYlRfnKg&s&w=250"
     },
     {
         "type": "direct",
