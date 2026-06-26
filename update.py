@@ -581,6 +581,12 @@ kanallar = [
     "logo": "https://pic.rtbcdn.ru/user/1f/ec/1fec36d83dfaabbf819c84a5cb044858.jpg?size=s"
     },
     {
+    "type": "generic_scraper",
+    "ad": "НТВ Мир",
+    "url": "http://rutv.pw/ntvmir",
+    "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ntvmir.jpg&w=250"
+    },
+    {
     "type": "playwright",
     "ad": "Суббота",
     "url": "https://rutube.ru/live/video/310744c10a5809da38aa445c952976da/",
@@ -598,23 +604,312 @@ kanallar = [
     "url": "https://ritsatv.ru/movie-id900226-telekanal-yu",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/8/8f/%D0%AE_2020.webp&w=250"
     },
+    # ===== ПОЗНАВАТЕЛЬНЫЕ =====
     {
-    "type": "m3u8_scraper",
-    "ad": "Animal Planet",
-    "url": "https://ritsatv.ru/movie-id600613-animal-planet",
-    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/2/20/2018_Animal_Planet_logo.svg&w=250"
+        "type": "generic_scraper",
+        "ad": "Animal Planet HD",
+        "url": "http://rutv.pw/animalplanethd",
+        "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/2/20/2018_Animal_Planet_logo.svg&w=250"
     },
     {
-    "type": "m3u8_scraper",
-    "ad": "National Geographic",
-    "url": "https://ritsatv.ru/movie-id901184-national-geographic",
-    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/medium/901184.webp&w=250"
+        "type": "generic_scraper",
+        "ad": "Da Vinci Learning",
+        "url": "http://rutv.pw/davincilearning",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/davincilearning.jpg&w=250"
     },
     {
-    "type": "m3u8_scraper",
-    "ad": "National Geo Wild",
-    "url": "https://ritsatv.ru/movie-id300230-nat-geo-wild",
-    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/300230.webp&w=250"
+        "type": "generic_scraper",
+        "ad": "Discovery Channel HD",
+        "url": "http://rutv.pw/discoveryhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/discoveryhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Discovery Science HD",
+        "url": "http://rutv.pw/discoverysciencehd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/discoverysciencehd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "English Club TV",
+        "url": "http://rutv.pw/englishclub",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/englishclub.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Food Network",
+        "url": "http://rutv.pw/foodnetwork",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/foodnetwork.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Galaxy TV",
+        "url": "http://rutv.pw/galaxy",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/galaxy.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "History 2 HD",
+        "url": "http://rutv.pw/h2hd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/h2hd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "History Channel HD",
+        "url": "http://rutv.pw/historyhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/historyhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "ID Xtra",
+        "url": "http://rutv.pw/idxtra",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/idxtra.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Nat Geo Wild HD",
+        "url": "http://rutv.pw/natgeowildhd",
+        "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/300230.webp&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "National Geographic HD",
+        "url": "http://rutv.pw/natgeohd",
+        "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/medium/901184.webp&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Ocean-TV",
+        "url": "http://rutv.pw/ocean",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ocean.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "RTG HD",
+        "url": "http://rutv.pw/rtghd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rtghd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Russia Today Doc",
+        "url": "http://rutv.pw/rtdoc",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rtdoc.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Travel + adventure HD",
+        "url": "http://rutv.pw/traveladventurehd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/traveladventurehd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Travel Channel HD",
+        "url": "http://rutv.pw/travelchannelhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/travelchannelhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju Explore",
+        "url": "http://rutv.pw/viasatexplore",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/viasatexplore.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju Nature",
+        "url": "http://rutv.pw/viasatnature",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/viasatnature.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "ZooПарк",
+        "url": "http://rutv.pw/zoopark",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zoopark.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Бобёр",
+        "url": "http://rutv.pw/bober",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bober.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "В мире животных HD",
+        "url": "http://rutv.pw/animalfamilyhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/animalfamilyhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Время",
+        "url": "http://rutv.pw/timetv",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/timetv.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Глазами туриста",
+        "url": "http://rutv.pw/glazamiturista",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/glazamiturista.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Доктор",
+        "url": "http://rutv.pw/doctv",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/doctv.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Домашние животные",
+        "url": "http://rutv.pw/domashniezhivotnye",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/domashniezhivotnye.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Еда ТВ",
+        "url": "http://rutv.pw/edatv",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/edatv.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Живая Планета",
+        "url": "http://rutv.pw/liveplanet",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/liveplanet.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Живая природа HD",
+        "url": "http://rutv.pw/wildnaturehd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/wildnaturehd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Загородная жизнь",
+        "url": "http://rutv.pw/zagorod",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zagorod.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Загородный",
+        "url": "http://rutv.pw/zagorodniy",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zagorodniy.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Здоровое ТВ",
+        "url": "http://rutv.pw/zdorovoe",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zdorovoe.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Зоо ТВ",
+        "url": "http://rutv.pw/telezoo",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/telezoo.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "История",
+        "url": "http://rutv.pw/istoriya",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/istoriya.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Калейдоскоп ТВ",
+        "url": "http://rutv.pw/kaleidoskop",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kaleidoskop.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Моя планета",
+        "url": "http://rutv.pw/moyaplaneta",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/moyaplaneta.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Нано ТВ",
+        "url": "http://rutv.pw/nano",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nano.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Наука 2.0",
+        "url": "http://rutv.pw/nauka",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nauka.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "НТВ Право",
+        "url": "http://rutv.pw/ntvpravo",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ntvpravo.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Планета HD",
+        "url": "http://rutv.pw/planetahd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/planetahd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Поехали!",
+        "url": "http://rutv.pw/poehali",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/poehali.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Приключения HD",
+        "url": "http://rutv.pw/adventurehd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/adventurehd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Просвещение",
+        "url": "http://rutv.pw/prosveshenie",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/prosveshenie.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Психология 21",
+        "url": "http://rutv.pw/psihologiya21",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/psihologiya21.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "РЖД ТВ",
+        "url": "http://rutv.pw/rzd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rzd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Россия К",
+        "url": "http://rutv.pw/kultura",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kultura.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Совершенно секретно",
+        "url": "http://rutv.pw/sovsek",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/sovsek.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Телекафе",
+        "url": "http://rutv.pw/telecafe",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/telecafe.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Телепутешествия",
+        "url": "http://rutv.pw/teletravel",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/teletravel.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Усадьба",
+        "url": "http://rutv.pw/usadba",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/usadba.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Успех",
+        "url": "http://rutv.pw/uspeh",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/uspeh.jpg&w=250"
     },
     {
     "type": "m3u8_scraper",
@@ -641,9 +936,9 @@ kanallar = [
     "logo": "https://wsrv.nl/?url=https://images.seeklogo.com/logo-png/40/1/eurosport-logo-png_seeklogo-407861.png&w=250"
     },
     {
-    "type": "m3u8_scraper",
+    "type": "generic_scraper",
     "ad": "Eurosport 2",
-    "url": "https://ritsatv.ru/movie-id900968-eurosport-2",
+    "url": "http://rutv.pw/eurosport2hd",
     "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900968.jpg&w=250"
     },
     {
@@ -663,6 +958,502 @@ kanallar = [
     "ad": "TNT Sports Premium",
     "url": "https://ritsatv.ru/movie-id901490-tnt-sports-premium",
     "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJ23KApagRAkNj-zS1Q9nhxox2bTwTx12WWRLT03EJg&s&w=250"
+    },
+    # ===== ФИЛЬМЫ =====
+    {
+        "type": "generic_scraper",
+        "ad": "Amedia 1",
+        "url": "http://rutv.pw/amedia1",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amedia1.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Amedia 1 HD",
+        "url": "http://rutv.pw/amedia1hd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amedia1hd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Amedia 2",
+        "url": "http://rutv.pw/amedia2",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amedia2.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Amedia Hit",
+        "url": "http://rutv.pw/amediahit",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amediahit.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Amedia Premium",
+        "url": "http://rutv.pw/amediapremium",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amediapremium.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Amedia Premium HD",
+        "url": "http://rutv.pw/amediapremiumhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amediapremiumhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Black",
+        "url": "http://rutv.pw/sonyturbo",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/sonyturbo.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Bollywood HD",
+        "url": "http://rutv.pw/bollywoodhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bollywoodhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Cinema",
+        "url": "http://rutv.pw/cinema",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/cinema.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "FilmBox",
+        "url": "http://rutv.pw/filmbox",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/filmbox.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "FilmBox Arthouse",
+        "url": "http://rutv.pw/filmboxarthouse",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/filmboxarthouse.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Fox",
+        "url": "http://rutv.pw/fox",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/fox.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Fox HD",
+        "url": "http://rutv.pw/foxhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/foxhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Fox Life",
+        "url": "http://rutv.pw/foxlife",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/foxlife.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Fox Life HD",
+        "url": "http://rutv.pw/foxlifehd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/foxlifehd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Red",
+        "url": "http://rutv.pw/set",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/set.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Sci-Fi",
+        "url": "http://rutv.pw/sonyscifi",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/sonyscifi.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "TV XXI (TV21)",
+        "url": "http://rutv.pw/tv21",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv21.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju TV1000",
+        "url": "http://rutv.pw/tv1000",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv1000.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju TV1000 action",
+        "url": "http://rutv.pw/tv1000action",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv1000action.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju TV1000 Русское кино",
+        "url": "http://rutv.pw/tv1000rus",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv1000rus.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju+ Comedy HD",
+        "url": "http://rutv.pw/vipcomedyhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vipcomedyhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju+ Megahit HD",
+        "url": "http://rutv.pw/vipmegahithd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vipmegahithd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju+ Premiere HD",
+        "url": "http://rutv.pw/vippremiumhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vippremiumhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "viju+ Serial HD",
+        "url": "http://rutv.pw/vipserialhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vipserialhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Дом кино",
+        "url": "http://rutv.pw/domkino",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/domkino.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Дом кино Премиум HD",
+        "url": "http://rutv.pw/domkinopremiumhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/domkinopremiumhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Дорама",
+        "url": "http://rutv.pw/dorama",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/dorama.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Еврокино",
+        "url": "http://rutv.pw/eurokino",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/eurokino.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Иллюзион+",
+        "url": "http://rutv.pw/illusionplus",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/illusionplus.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Кино ТВ",
+        "url": "http://rutv.pw/kinotv",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kinotv.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Кино ТВ HD",
+        "url": "http://rutv.pw/kinotvhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kinotvhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Кинопоказ",
+        "url": "http://rutv.pw/kinopokaz",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kinopokaz.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мир сериала",
+        "url": "http://rutv.pw/mirseriala",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mirseriala.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мосфильм. Золотая коллекция",
+        "url": "http://rutv.pw/mosfilm",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mosfilm.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Наше любимое кино",
+        "url": "http://rutv.pw/nashelyubimoekino",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nashelyubimoekino.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "НСТ",
+        "url": "http://rutv.pw/strashnoe",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/strashnoe.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "НТВ Хит",
+        "url": "http://rutv.pw/ntvhit",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ntvhit.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Победа",
+        "url": "http://rutv.pw/pobeda",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/pobeda.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Русская комедия",
+        "url": "http://rutv.pw/russkayakomediya",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/russkayakomediya.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Русский бестселлер",
+        "url": "http://rutv.pw/bestrussia",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bestrussia.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Русский детектив",
+        "url": "http://rutv.pw/rudetective",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rudetective.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Русский иллюзион",
+        "url": "http://rutv.pw/russkiyillusion",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/russkiyillusion.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Русский роман",
+        "url": "http://rutv.pw/rusroman",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rusroman.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Русский роман HD",
+        "url": "http://rutv.pw/rusromanhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rusromanhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "ТВ 3",
+        "url": "http://rutv.pw/tv3",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv3.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Точка ТВ",
+        "url": "http://rutv.pw/tochka",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tochka.jpg&w=250"
+    },
+     # ===== ДЕТСКИЕ =====
+    {
+        "type": "generic_scraper",
+        "ad": "Ani",
+        "url": "http://rutv.pw/ani",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ani.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Cartoon Network",
+        "url": "http://rutv.pw/cartoonnetwork",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/cartoonnetwork.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Gulli Girl",
+        "url": "http://rutv.pw/gulli",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/gulli.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "JimJam",
+        "url": "http://rutv.pw/jimjam",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/jimjam.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Nick Jr.",
+        "url": "http://rutv.pw/nickjr",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nickjr.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Nickelodeon",
+        "url": "http://rutv.pw/nickelodeon",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nickelodeon.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Nickelodeon HD",
+        "url": "http://rutv.pw/nickelodeonhd",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nickelodeonhd.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "TiJi",
+        "url": "http://rutv.pw/tiji",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tiji.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "В гостях у сказки",
+        "url": "http://rutv.pw/skazka",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/skazka.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Детский мир",
+        "url": "http://rutv.pw/detskiymir",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/detskiymir.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Карусель",
+        "url": "http://rutv.pw/karusel",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/karusel.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мама",
+        "url": "http://rutv.pw/mama",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mama.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мульт",
+        "url": "http://rutv.pw/mult",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mult.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мультиландия",
+        "url": "http://rutv.pw/multimania",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/multimania.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мультимузыка",
+        "url": "http://rutv.pw/multimuzyka",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/multimuzyka.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Радость моя",
+        "url": "http://rutv.pw/radostmoya",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/radostmoya.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Рыжий",
+        "url": "http://rutv.pw/ryzhiy",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ryzhiy.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Уникум",
+        "url": "http://rutv.pw/detskiy",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/detskiy.jpg&w=250"
+    },
+    # ===== МУЗЫКА =====
+     {
+        "type": "generic_scraper",
+        "ad": "Bridge TV",
+        "url": "http://rutv.pw/bridge",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bridge.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Europa Plus TV",
+        "url": "http://rutv.pw/europaplus",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/europaplus.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "FON Music",
+        "url": "http://rutv.pw/tntmusic",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tntmusic.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Mezzo",
+        "url": "http://rutv.pw/mezzo",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mezzo.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Music Box RU",
+        "url": "http://rutv.pw/russianmusicbox",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/russianmusicbox.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "RU TV",
+        "url": "http://rutv.pw/rutv",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rutv.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Жара",
+        "url": "http://rutv.pw/stv",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/stv.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Муз ТВ",
+        "url": "http://rutv.pw/muz",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/muz.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Музыка Первого",
+        "url": "http://rutv.pw/muz1",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/muz1.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Шансон ТВ",
+        "url": "http://rutv.pw/shanson",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/shanson.jpg&w=250"
+    },
+    # ===== МУЖСКИЕ =====
+    {
+        "type": "generic_scraper",
+        "ad": "Авто 24",
+        "url": "http://rutv.pw/avto24",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/avto24.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Драйв ТВ",
+        "url": "http://rutv.pw/drive",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/drive.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Мужской",
+        "url": "http://rutv.pw/mans",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mans.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Охота и рыбалка",
+        "url": "http://rutv.pw/ohotairybalka",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ohotairybalka.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Охотник и рыболов",
+        "url": "http://rutv.pw/ohotnikirybolov",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ohotnikirybolov.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Техно 24",
+        "url": "http://rutv.pw/techno24",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/techno24.jpg&w=250"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "Точка Отрыва",
+        "url": "http://rutv.pw/tochkaotryva",
+        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tochkaotryva.jpg&w=250"
     },
 ]
 
