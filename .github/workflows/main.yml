@@ -24,6 +24,7 @@ jobs:
           pip install requests playwright nest_asyncio
           playwright install chromium
           playwright install-deps
+          pip install requests playwright nest_asyncio aiohttp
 
       - name: Skripti işə sal və linkləri tap
         run: python update.py
