@@ -749,7 +749,7 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Загородный",
         "url": "http://rutv.pw/zagorodniy",
-        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/6/67/Zagorodniy_logo.png/250px-Zagorodniy_logo.png&w=250"
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTyOpspUq1q0vQJazgkvj3nYHSqjdI33RfQqj2ilkSTLw%26s%3D10&w=250&output=webp"
     },
     {
         "type": "generic_scraper",
@@ -827,7 +827,7 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Телекафе",
         "url": "http://rutv.pw/telecafe",
-        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/8b/Telecafe_logo.png/250px-Telecafe_logo.png&w=250https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSjT6LzQkGIZ0oSq1qQJhAWxntsuulG6NwbbPAKjpdQiA%26s%3D10&w=250&output=webp"
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Ftoplogos.ru%2Fimages%2Flogo-telekafe.png&w=250&output=webp"
     },
     {
         "type": "generic_scraper",
