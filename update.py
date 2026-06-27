@@ -577,10 +577,10 @@ kanallar = [
     "logo": "https://pic.rtbcdn.ru/user/1f/ec/1fec36d83dfaabbf819c84a5cb044858.jpg?size=s"
     },
     {
-    "type": "generic_scraper",
-    "ad": "НТВ Мир",
-    "url": "http://rutv.pw/ntvmir",
-    "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ntvmir.jpg&w=250"
+        "type": "generic_scraper",
+        "ad": "НТВ Мир",
+        "url": "http://rutv.pw/ntvmir",
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/9/96/NTV_MIR.svg/250px-NTV_MIR.svg.png&w=250"
     },
     {
     "type": "playwright",
@@ -611,31 +611,31 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Da Vinci Learning",
         "url": "http://rutv.pw/davincilearning",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/davincilearning.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/2/20/Da_Vinci_Learning_Logo.svg/250px-Da_Vinci_Learning_Logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Discovery Channel HD",
         "url": "http://rutv.pw/discoveryhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/discoveryhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Discovery_Channel_-_Logo_2019.svg/250px-Discovery_Channel_-_Logo_2019.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "English Club TV",
         "url": "http://rutv.pw/englishclub",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/englishclub.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/95/English_Club_TV_logo.png/250px-English_Club_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Galaxy TV",
         "url": "http://rutv.pw/galaxy",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/galaxy.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/a/a2/Galaxy_TV_logo.png/250px-Galaxy_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "History 2 HD",
         "url": "http://rutv.pw/h2hd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/h2hd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/8/8b/History2.svg/250px-History2.svg.png&w=250"
     },
     {
         "type": "universal_scraper",
@@ -649,203 +649,203 @@ kanallar = [
         "url": "https://ritsatv.ru/movie-id901184-national-geographic",
         "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/medium/901184.webp&w=250"
     },
-    {
+   {
         "type": "generic_scraper",
         "ad": "Ocean-TV",
         "url": "http://rutv.pw/ocean",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ocean.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/43/Ocean_TV_logo.png/250px-Ocean_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "RTG HD",
         "url": "http://rutv.pw/rtghd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rtghd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/09/RTG_HD_logo.png/250px-RTG_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Russia Today Doc",
         "url": "http://rutv.pw/rtdoc",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rtdoc.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/c/c5/RT_Doc_logo.svg/250px-RT_Doc_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Travel + adventure HD",
         "url": "http://rutv.pw/traveladventurehd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/traveladventurehd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/f/f4/Travel_plus_adventure_HD_logo.png/250px-Travel_plus_adventure_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju Explore",
         "url": "http://rutv.pw/viasatexplore",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/viasatexplore.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Viasat_Explore.svg/250px-Viasat_Explore.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju Nature",
         "url": "http://rutv.pw/viasatnature",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/viasatnature.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/1/13/Viasat_Nature.svg/250px-Viasat_Nature.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "ZooПарк",
         "url": "http://rutv.pw/zoopark",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zoopark.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/7d/ZooParK_TV_logo.png/250px-ZooParK_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Бобёр",
         "url": "http://rutv.pw/bober",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bober.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/30/Bober_TV_logo.png/250px-Bober_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "В мире животных HD",
         "url": "http://rutv.pw/animalfamilyhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/animalfamilyhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/a/a7/Animal_Family_HD_logo.png/250px-Animal_Family_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Время",
         "url": "http://rutv.pw/timetv",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/timetv.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/8f/Time_TV_logo.png/250px-Time_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Глазами туриста",
         "url": "http://rutv.pw/glazamiturista",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/glazamiturista.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/2/23/Glazami_Turista_logo.png/250px-Glazami_Turista_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Доктор",
         "url": "http://rutv.pw/doctv",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/doctv.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/74/Doctor_TV_logo.png/250px-Doctor_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Домашние животные",
         "url": "http://rutv.pw/domashniezhivotnye",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/domashniezhivotnye.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/6/6f/Domashnie_zhivotnye_logo.png/250px-Domashnie_zhivotnye_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Живая Планета",
         "url": "http://rutv.pw/liveplanet",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/liveplanet.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/02/Live_Planet_TV_logo.png/250px-Live_Planet_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Живая природа HD",
         "url": "http://rutv.pw/wildnaturehd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/wildnaturehd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/34/Wild_Nature_HD_logo.png/250px-Wild_Nature_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Загородная жизнь",
         "url": "http://rutv.pw/zagorod",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zagorod.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/b/bd/Zagorodnaya_zhizn_logo.png/250px-Zagorodnaya_zhizn_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Загородный",
         "url": "http://rutv.pw/zagorodniy",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zagorodniy.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/6/67/Zagorodniy_logo.png/250px-Zagorodniy_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Здоровое ТВ",
         "url": "http://rutv.pw/zdorovoe",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/zdorovoe.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/5/52/Zdorovoe_TV_logo.png/250px-Zdorovoe_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Зоо ТВ",
         "url": "http://rutv.pw/telezoo",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/telezoo.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/c/c1/Telezoo_logo.png/250px-Telezoo_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "История",
         "url": "http://rutv.pw/istoriya",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/istoriya.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/5/57/Istoriya_TV_logo.png/250px-Istoriya_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Моя планета",
         "url": "http://rutv.pw/moyaplaneta",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/moyaplaneta.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/c/c2/Moya_Planeta_logo.png/250px-Moya_Planeta_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Нано ТВ",
         "url": "http://rutv.pw/nano",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nano.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/9d/Nano_TV_logo.png/250px-Nano_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Наука 2.0",
         "url": "http://rutv.pw/nauka",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nauka.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/7b/Nauka_2.0_logo.png/250px-Nauka_2.0_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Планета HD",
         "url": "http://rutv.pw/planetahd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/planetahd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/6/66/Planeta_HD_logo.png/250px-Planeta_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Поехали!",
         "url": "http://rutv.pw/poehali",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/poehali.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/e/ef/Poehali_TV_logo.png/250px-Poehali_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Приключения HD",
         "url": "http://rutv.pw/adventurehd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/adventurehd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/c/c3/Adventure_HD_logo.png/250px-Adventure_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Психология 21",
         "url": "http://rutv.pw/psihologiya21",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/psihologiya21.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/9e/Psihologiya21_logo.png/250px-Psihologiya21_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "РЖД ТВ",
         "url": "http://rutv.pw/rzd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rzd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/87/RZD_TV_logo.png/250px-RZD_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Совершенно секретно",
         "url": "http://rutv.pw/sovsek",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/sovsek.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/e/e3/Sovsek_TV_logo.png/250px-Sovsek_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Телекафе",
         "url": "http://rutv.pw/telecafe",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/telecafe.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/8b/Telecafe_logo.png/250px-Telecafe_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Телепутешествия",
         "url": "http://rutv.pw/teletravel",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/teletravel.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/5/59/Teletravel_logo.png/250px-Teletravel_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Усадьба",
         "url": "http://rutv.pw/usadba",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/usadba.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/b/b7/Usadba_TV_logo.png/250px-Usadba_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Успех",
         "url": "http://rutv.pw/uspeh",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/uspeh.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/31/Uspeh_TV_logo.png/250px-Uspeh_TV_logo.png&w=250"
     },
     {
     "type": "universal_scraper",
@@ -900,229 +900,229 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Amedia 1 HD",
         "url": "http://rutv.pw/amedia1hd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amedia1hd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/41/Amedia_1_HD_logo.png/250px-Amedia_1_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Amedia 2",
         "url": "http://rutv.pw/amedia2",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amedia2.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/38/Amedia_2_logo.png/250px-Amedia_2_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Amedia Hit",
         "url": "http://rutv.pw/amediahit",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amediahit.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/e/e7/Amedia_Hit_logo.png/250px-Amedia_Hit_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Amedia Premium HD",
         "url": "http://rutv.pw/amediapremiumhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/amediapremiumhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/f/f0/Amedia_Premium_HD_logo.png/250px-Amedia_Premium_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Black",
         "url": "http://rutv.pw/sonyturbo",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/sonyturbo.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/97/Black_TV_logo.png/250px-Black_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Bollywood HD",
         "url": "http://rutv.pw/bollywoodhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bollywoodhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/90/Bollywood_HD_logo.png/250px-Bollywood_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Cinema",
         "url": "http://rutv.pw/cinema",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/cinema.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/c/c6/Cinema_TV_logo.png/250px-Cinema_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "FilmBox",
         "url": "http://rutv.pw/filmbox",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/filmbox.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/2/29/FilmBox_logo.svg/250px-FilmBox_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "FilmBox Arthouse",
         "url": "http://rutv.pw/filmboxarthouse",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/filmboxarthouse.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/2/29/FilmBox_logo.svg/250px-FilmBox_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Fox HD",
         "url": "http://rutv.pw/foxhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/foxhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Fox_Broadcasting_Company_logo.svg/250px-Fox_Broadcasting_Company_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Fox Life HD",
         "url": "http://rutv.pw/foxlifehd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/foxlifehd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Fox_Life_logo.svg/250px-Fox_Life_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Red",
         "url": "http://rutv.pw/set",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/set.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/94/Red_Sony_TV_logo.png/250px-Red_Sony_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Sci-Fi",
         "url": "http://rutv.pw/sonyscifi",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/sonyscifi.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/0/09/Syfy_Logo.svg/250px-Syfy_Logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "TV XXI (TV21)",
         "url": "http://rutv.pw/tv21",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv21.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/b/b1/TV21_logo.png/250px-TV21_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju TV1000",
         "url": "http://rutv.pw/tv1000",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv1000.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/a/a1/TV1000_logo.svg/250px-TV1000_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju TV1000 action",
         "url": "http://rutv.pw/tv1000action",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv1000action.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/8/8f/TV1000_Action_logo.svg/250px-TV1000_Action_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju TV1000 Русское кино",
         "url": "http://rutv.pw/tv1000rus",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tv1000rus.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/35/TV1000_Russkoe_Kino_logo.png/250px-TV1000_Russkoe_Kino_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju+ Comedy HD",
         "url": "http://rutv.pw/vipcomedyhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vipcomedyhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/49/Vip_Comedy_HD_logo.png/250px-Vip_Comedy_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju+ Megahit HD",
         "url": "http://rutv.pw/vipmegahithd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vipmegahithd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/2/27/Vip_Megahit_HD_logo.png/250px-Vip_Megahit_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju+ Premiere HD",
         "url": "http://rutv.pw/vippremiumhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vippremiumhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/d/d6/Vip_Premium_HD_logo.png/250px-Vip_Premium_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "viju+ Serial HD",
         "url": "http://rutv.pw/vipserialhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/vipserialhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/1/14/Vip_Serial_HD_logo.png/250px-Vip_Serial_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Дом кино",
         "url": "http://rutv.pw/domkino",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/domkino.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/1/1e/Dom_Kino_logo.png/250px-Dom_Kino_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Дом кино Премиум HD",
         "url": "http://rutv.pw/domkinopremiumhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/domkinopremiumhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/0b/Dom_Kino_Premium_HD_logo.png/250px-Dom_Kino_Premium_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Дорама",
         "url": "http://rutv.pw/dorama",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/dorama.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/44/Dorama_TV_logo.png/250px-Dorama_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Еврокино",
         "url": "http://rutv.pw/eurokino",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/eurokino.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/4d/Eurokino_logo.png/250px-Eurokino_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Иллюзион+",
         "url": "http://rutv.pw/illusionplus",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/illusionplus.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/3c/Illyuzion_plus_logo.png/250px-Illyuzion_plus_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Кино ТВ HD",
         "url": "http://rutv.pw/kinotvhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kinotvhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/e/e7/Kino_TV_HD_logo.png/250px-Kino_TV_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Кинопоказ",
         "url": "http://rutv.pw/kinopokaz",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/kinopokaz.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/91/Kinopokaz_logo.png/250px-Kinopokaz_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Мосфильм. Золотая коллекция",
         "url": "http://rutv.pw/mosfilm",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mosfilm.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/f/fc/Mosfilm_Zolotaya_Kollekciya_logo.png/250px-Mosfilm_Zolotaya_Kollekciya_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Наше любимое кино",
         "url": "http://rutv.pw/nashelyubimoekino",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nashelyubimoekino.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/96/Nashe_lyubimoe_kino_logo.png/250px-Nashe_lyubimoe_kino_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "НСТ",
         "url": "http://rutv.pw/strashnoe",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/strashnoe.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/77/NST_TV_logo.png/250px-NST_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Победа",
         "url": "http://rutv.pw/pobeda",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/pobeda.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/42/Pobeda_TV_logo.png/250px-Pobeda_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Русская комедия",
         "url": "http://rutv.pw/russkayakomediya",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/russkayakomediya.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/8a/Russkaya_komediya_logo.png/250px-Russkaya_komediya_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Русский бестселлер",
         "url": "http://rutv.pw/bestrussia",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bestrussia.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/98/Russkiy_bestseller_logo.png/250px-Russkiy_bestseller_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Русский детектив",
         "url": "http://rutv.pw/rudetective",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rudetective.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/03/Russkiy_detektiv_logo.png/250px-Russkiy_detektiv_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Русский иллюзион",
         "url": "http://rutv.pw/russkiyillusion",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/russkiyillusion.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/79/Russkiy_illyuzion_logo.png/250px-Russkiy_illyuzion_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Русский роман HD",
         "url": "http://rutv.pw/rusromanhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rusromanhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/9b/Russkiy_roman_HD_logo.png/250px-Russkiy_roman_HD_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Точка ТВ",
         "url": "http://rutv.pw/tochka",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tochka.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/2/26/Tochka_TV_logo.png/250px-Tochka_TV_logo.png&w=250"
     },
      # ===== ДЕТСКИЕ =====
     {
@@ -1135,184 +1135,184 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Ani",
         "url": "http://rutv.pw/ani",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ani.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/c/c0/Ani_TV_logo.png/250px-Ani_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Gulli Girl",
         "url": "http://rutv.pw/gulli",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/gulli.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/1/12/Gulli_girl_logo.svg/250px-Gulli_girl_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "JimJam",
         "url": "http://rutv.pw/jimjam",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/jimjam.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/4b/JimJam_logo.svg/250px-JimJam_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Nick Jr.",
         "url": "http://rutv.pw/nickjr",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nickjr.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/3/39/Nick_Jr._logo_2009.svg/250px-Nick_Jr._logo_2009.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Nickelodeon HD",
         "url": "http://rutv.pw/nickelodeonhd",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/nickelodeonhd.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Nickelodeon_2009_logo.svg/250px-Nickelodeon_2009_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "TiJi",
         "url": "http://rutv.pw/tiji",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tiji.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/b/bc/TiJi_logo.svg/250px-TiJi_logo.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "В гостях у сказки",
         "url": "http://rutv.pw/skazka",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/skazka.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/09/V_gostyah_u_skazki_logo.png/250px-V_gostyah_u_skazki_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Детский мир",
         "url": "http://rutv.pw/detskiymir",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/detskiymir.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/3b/Detskiy_mir_TV_logo.png/250px-Detskiy_mir_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Мама",
         "url": "http://rutv.pw/mama",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mama.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/1/1a/Mama_TV_logo.png/250px-Mama_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Мульт",
         "url": "http://rutv.pw/mult",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mult.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/c/ca/Mult_TV_logo.png/250px-Mult_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Мультиландия",
         "url": "http://rutv.pw/multimania",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/multimania.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/4b/Multimania_TV_logo.png/250px-Multimania_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Мультимузыка",
         "url": "http://rutv.pw/multimuzyka",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/multimuzyka.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/2/2a/Multimuzyka_logo.png/250px-Multimuzyka_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Радость моя",
         "url": "http://rutv.pw/radostmoya",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/radostmoya.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/01/Radost_moya_TV_logo.png/250px-Radost_moya_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Рыжий",
         "url": "http://rutv.pw/ryzhiy",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ryzhiy.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/3/37/Ryzhiy_TV_logo.png/250px-Ryzhiy_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Уникум",
         "url": "http://rutv.pw/detskiy",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/detskiy.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/83/Unicum_TV_logo.png/250px-Unicum_TV_logo.png&w=250"
     },
     # ===== МУЗЫКА =====
      {
         "type": "generic_scraper",
         "ad": "Bridge TV",
         "url": "http://rutv.pw/bridge",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/bridge.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/89/Bridge_TV_logo.png/250px-Bridge_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Europa Plus TV",
         "url": "http://rutv.pw/europaplus",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/europaplus.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Europa_Plus_TV.svg/250px-Europa_Plus_TV.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "FON Music",
         "url": "http://rutv.pw/tntmusic",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tntmusic.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/e/e8/FON_Music_logo.png/250px-FON_Music_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Mezzo",
         "url": "http://rutv.pw/mezzo",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mezzo.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/0/08/Mezzo_live_HD.svg/250px-Mezzo_live_HD.svg.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "RU TV",
         "url": "http://rutv.pw/rutv",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/rutv.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/b/bc/RU_TV_logo.png/250px-RU_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Жара",
         "url": "http://rutv.pw/stv",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/stv.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/9/9c/Zhara_TV_logo.png/250px-Zhara_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Музыка Первого",
         "url": "http://rutv.pw/muz1",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/muz1.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/d/d4/Muzyka_pervogo_logo.png/250px-Muzyka_pervogo_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Шансон ТВ",
         "url": "http://rutv.pw/shanson",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/shanson.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/1/10/Shanson_TV_logo.png/250px-Shanson_TV_logo.png&w=250"
     },
     # ===== МУЖСКИЕ =====
     {
         "type": "generic_scraper",
         "ad": "Авто 24",
         "url": "http://rutv.pw/avto24",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/avto24.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/46/Avto24_logo.png/250px-Avto24_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Драйв ТВ",
         "url": "http://rutv.pw/drive",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/drive.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/8/8a/Drive_TV_logo.png/250px-Drive_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Мужской",
         "url": "http://rutv.pw/mans",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/mans.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/0e/Muzhskoy_TV_logo.png/250px-Muzhskoy_TV_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Охота и рыбалка",
         "url": "http://rutv.pw/ohotairybalka",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ohotairybalka.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/d/de/Ohota_i_rybalka_logo.png/250px-Ohota_i_rybalka_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Охотник и рыболов",
         "url": "http://rutv.pw/ohotnikirybolov",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/ohotnikirybolov.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/0/07/Ohotnik_i_rybolov_logo.png/250px-Ohotnik_i_rybolov_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Техно 24",
         "url": "http://rutv.pw/techno24",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/techno24.jpg&w=250"
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/4/47/Techno24_logo.png/250px-Techno24_logo.png&w=250"
     },
     {
         "type": "generic_scraper",
         "ad": "Точка Отрыва",
         "url": "http://rutv.pw/tochkaotryva",
-        "logo": "https://images.weserv.nl/?url=http://rutv.pw/imgs/tochkaotryva.jpg&w=250"
-    },
+        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/7c/Tochka_otryva_logo.png/250px-Tochka_otryva_logo.png&w=250"
+    }
 ]
 
 # ==============================================================================
