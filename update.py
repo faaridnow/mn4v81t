@@ -526,7 +526,7 @@ kanallar = [
         "ad": "TLC",
         "stream_url": "https://yayin2.canlitv.fun/live/tlc.stream/chunklist_w942289914.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3c%2FTLC_logo_%25282023%2529.svg%2F250px-TLC_logo_%25282023%2529.svg.png&w=250&output=webp"
-    }
+    },
     {
         "type": "direct",
         "ad": "Yaban TV HD",
