@@ -570,6 +570,18 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://cdn-i.pr.trt.com.tr/trtcocuk/trtcocuk-logo.svg&w=250&format=png"
     },
     {
+        "type": "direct",
+        "ad": "Cartoon Network Türkiye",
+        "stream_url": "https://yayin2.canlitv.fun/live/cartoon-network.stream/chunklist_w972762167.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fba%2FCartoon_Network.svg&w=250&output=webp"
+    },
+    {
+    "type": "playwright",
+    "ad": "Minika GO",
+    "url": "https://canlitv.com/minika-cocuk-canli-izle",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTX2twFslHGwCEairCZV1dVQgHgvBfkJxFbCg%26s&w=250&output=webp"
+    },
+    {
     "type": "playwright",
     "ad": "Россия 1",
     "url": "https://smotret.tv/rossiya-1",
