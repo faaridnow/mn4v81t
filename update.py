@@ -1299,7 +1299,7 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Точка Отрыва",
         "url": "http://rutv.pw/tochkaotryva",
-        "logo": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/ru/thumb/7/7c/Tochka_otryva_logo.png/250px-Tochka_otryva_logo.png&w=250"
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.cableman.ru%2Fsites%2Fdefault%2Ffiles%2Ftochka_otryva_1.png&w=250&output=webp"
     }
 ]
 
