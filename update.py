@@ -413,7 +413,7 @@ kanallar = [
         "type": "generic_scraper",
         "ad": "Show TV",
         "url": "https://www.showtv.com.tr/canli-yayin", 
-        "stream_base": "https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8",
+        "stream_base": "https://ciner.daioncdn.net/showtv/showtv_720p.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
     {
@@ -461,6 +461,11 @@ kanallar = [
         "type": "playwright",
         "ad": "Kanal 7",
         "url": "https://www.kanal7.com/canli-izle"
+    },
+    {
+        "type": "direct",
+        "ad": "Kanal 7 Avrupa",
+        "stream_url": "https://livetv.radyotvonline.net/kanal7live/kanal7avr/chunklist.m3u8"
     },
     {
         "type": "playwright",
@@ -516,6 +521,12 @@ kanallar = [
         "stream_url": "https://tv-trtbelgesel-dai.medya.trt.com.tr/master_3.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TRT_Belgesel_logo_%282019-%29.svg/250px-TRT_Belgesel_logo_%282019-%29.svg.png"
     },
+    {
+        "type": "direct",
+        "ad": "TLC",
+        "stream_url": "https://yayin2.canlitv.fun/live/tlc.stream/chunklist_w942289914.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3c%2FTLC_logo_%25282023%2529.svg%2F250px-TLC_logo_%25282023%2529.svg.png&w=250&output=webp"
+    }
     {
         "type": "direct",
         "ad": "Yaban TV HD",
