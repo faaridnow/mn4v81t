@@ -583,6 +583,12 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png/250px-%D0%9C%D0%B8%D1%80_%D0%A2%D0%92_logo.png&w=250"
     },
     {
+    "type": "generic_scraper",
+    "ad": "РБК",
+    "url": "http://rutv.pw/rbc",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FRBK_logo.svg%2F3840px-RBK_logo.svg.png&w=250&output=webp"
+    },
+    {
     "type": "playwright",
     "ad": "НТВ",
     "url": "https://rutube.ru/live/video/c37cd74192c6bc3d6cd6077c0c4fd686/",
@@ -601,16 +607,10 @@ kanallar = [
     "logo": "https://pic.rtbcdn.ru/user/dd/0e/dd0e078410ed58d778b38164b3ccdc0d.jpg?size=s"
     },
     {
-    "type": "universal_scraper",
+    "type": "playwright",
     "ad": "ТНТ",
     "url": "https://ritsatv.ru/movie-id300118-tnt",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_tnt.png&w=250"
-    },
-    {
-    "type": "universal_scraper",
-    "ad": "Ю ТВ",
-    "url": "https://ritsatv.ru/movie-id900226-telekanal-yu",
-    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/8/8f/%D0%AE_2020.webp&w=250"
     },
     # ===== ПОЗНАВАТЕЛЬНЫЕ =====
     {
@@ -650,15 +650,15 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa3%2FHistory2Logo2019.png&w=250&output=webp"
     },
     {
-        "type": "universal_scraper",
+        "type": "generic_scraper",
         "ad": "Nat Geo Wild HD",
-        "url": "https://ritsatv.ru/movie-id300230-nat-geo-wild",
+        "url": "http://rutv.pw/natgeowildhd",
         "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/300230.webp&w=250"
     },
     {
-        "type": "universal_scraper",
+        "type": "generic_scraper",
         "ad": "National Geographic HD",
-        "url": "https://ritsatv.ru/movie-id901184-national-geographic",
+        "url": "http://rutv.pw/natgeohd",
         "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/medium/901184.webp&w=250"
     },
    {
@@ -860,21 +860,21 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNRDrjRDKEJdaypnmg-uVj5CwXqGj1zCFtv36pp669w&s=10&w=250"
     },
     {
-    "type": "universal_scraper",
+    "type": "playwright",
     "ad": "Setanta Sports 1",
     "url": "https://ritsatv.ru/movie-id900982-setanta-1",
     "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900982.jpg&w=250"
     },
     {
-    "type": "universal_scraper",
+    "type": "playwright",
     "ad": "Setanta Sports 2",
     "url": "https://ritsatv.ru/movie-id900983-setanta-2",
     "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFR8wvcpZvK--w75DSnZM0Nloq8Rf7LJQqSSBvWWdTw3F62qT13t6NgDS8&s=10&w=250"
     },
     {
-    "type": "playwright",
+    "type": "generic_scraper",
     "ad": "Eurosport 1",
-    "url": "http://myru.top/online/eurosport",
+    "url": "http://rutv.pw/eurosport1hd",
     "logo": "https://wsrv.nl/?url=https://images.seeklogo.com/logo-png/40/1/eurosport-logo-png_seeklogo-407861.png&w=250"
     },
     {
@@ -882,18 +882,6 @@ kanallar = [
     "ad": "Eurosport 2",
     "url": "http://rutv.pw/eurosport2hd",
     "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900968.jpg&w=250"
-    },
-    {
-    "type": "universal_scraper",
-    "ad": "TNT Sports 1",
-    "url": "https://ritsatv.ru/movie-id901126-tnt-sports-1",
-    "logo": "https://wsrv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/TNT_Sports_%282023%29.svg/960px-TNT_Sports_%282023%29.svg.png&w=250"
-    },
-    {
-    "type": "universal_scraper",
-    "ad": "TNT Sports 2",
-    "url": "https://ritsatv.ru/movie-id901269-tnt-sports-2",
-    "logo": "https://wsrv.nl/?url=https://media.info/l/o/1/1540.1690027877.png&w=250"
     },
     {
     "type": "universal_scraper",
