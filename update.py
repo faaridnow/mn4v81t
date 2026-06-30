@@ -1397,6 +1397,24 @@ kanallar = [
         "url": "http://ntv.cx/channel-cdnlive/ABC?code=us",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTU4lc5aId3fqW4wVzoEexwW7WPyMAN1SdajvpwRJvu3Q%26s%3D10&w=250&output=webp"
     },
+    {
+        "type": "playwright_smart",
+        "ad": "HBO USA",
+        "url": "http://ntv.cx/channel-cdnlive/HBO?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fd%2Fde%2FHBO_logo.svg&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "Discovery Channel USA",
+        "url": "http://ntv.cx/channel-cdnlive/Discovery-Channel?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F2%2F27%2FDiscovery_Channel_-_Logo_2019.svg%2F960px-Discovery_Channel_-_Logo_2019.svg.png&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "National Geographic USA",
+        "url": "http://ntv.cx/channel-cdnlive/National-Geographic?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F6a%2FNational-Geographic-Logo.svg%2F3840px-National-Geographic-Logo.svg.png&w=250&output=webp"
+    },
 ]
 
 # ==============================================================================
