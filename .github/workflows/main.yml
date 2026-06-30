@@ -36,4 +36,5 @@ jobs:
           git add channels.m3u
           # Əgər heç bir dəyişiklik yoxdursa xəta verməməsi üçün exit 0 istifadə edirik
           git commit -m "Kanallar avtomatik yeniləndi" || exit 0
+          git pull --rebase origin main
           git push
