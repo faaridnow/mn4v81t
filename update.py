@@ -1385,6 +1385,18 @@ kanallar = [
         "url": "http://ntv.cx/channel-cdnlive/NBC?code=us",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQYC5OrCu-3Oe4RlGCG-CP_f28eE4f0LVd46sO3s2pzyQ%26s%3D10&w=250&output=webp"
     },
+    {
+        "type": "playwright_smart",
+        "ad": "CBS USA",
+        "url": "http://ntv.cx/channel-cdnlive/CBS?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRieaBD2t2Z8IlObznwj9aubB-5Il1CLLUXWJTjEFTn9A%26s%3D10&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "ABC USA",
+        "url": "http://ntv.cx/channel-cdnlive/ABC?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTU4lc5aId3fqW4wVzoEexwW7WPyMAN1SdajvpwRJvu3Q%26s%3D10&w=250&output=webp"
+    },
 ]
 
 # ==============================================================================
