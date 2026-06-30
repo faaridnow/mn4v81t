@@ -236,6 +236,49 @@ def handle_universal_scraper(kanal):
     except Exception as e:
         print(f"   [Universal Scraper Xətası]: {e}")
         return None
+
+async def extract_m3u8_smart(video_page_url):
+    raw_links = []
+
+    def handle_request(request):
+        url = request.url
+        if ".m3u8" in url:
+            raw_links.append(url)
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
+        page = await context.new_page()
+        page.on("request", handle_request)
+
+        try:
+            await page.goto(video_page_url, wait_until="domcontentloaded", timeout=60000)
+            await page.mouse.click(500, 500)
+            await page.wait_for_timeout(10000)
+        except Exception as e:
+            print(f"   [Smart Playwright Xətası]: {e}")
+        finally:
+            await browser.close()
+
+    unique_links = list(set(raw_links))
+    mono_links = [l for l in unique_links if "mono.m3u8" in l]
+    master_links = [l for l in unique_links if "mono.m3u8" not in l]
+
+    return mono_links if mono_links else master_links
+
+def handle_playwright_smart(kanal):
+    """Yeni 'ağıllı' filtrləmə ilə işləyən Playwright handler (kanal dict qəbul edir)"""
+    print(f'   [Smart Playwright] Brauzer işə salındı, hədəf: {kanal["ad"]}')
+    try:
+        loop = asyncio.get_event_loop()
+        netice = loop.run_until_complete(extract_m3u8_smart(kanal["url"]))
+        if netice:
+            return netice[0]
+    except Exception as e:
+        print(f'   [Smart Playwright Dövr Xətası]: {e}')
+    return None
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
 # ==============================================================================
@@ -1324,6 +1367,18 @@ kanallar = [
         "url": "http://rutv.pw/tochkaotryva",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.cableman.ru%2Fsites%2Fdefault%2Ffiles%2Ftochka_otryva_1.png&w=250&output=webp"
     },
+    {
+        "type": "playwright_smart",
+        "ad": "TBS USA",
+        "url": "http://ntv.cx/channel-cdnlive/TBS?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F2c%2FTBS_2020.svg&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "TNT USA",
+        "url": "http://ntv.cx/channel-cdnlive/TNT?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F24%2FTNT_Logo_2016.svg&w=250&output=webp"
+    },
 ]
 
 # ==============================================================================
@@ -1358,6 +1413,8 @@ def main():
                     canli_link = handle_playwright(kanal, headers)
                 elif kanal["type"] == "universal_scraper":
                     canli_link = handle_universal_scraper(kanal)
+                elif kanal["type"] == "playwright_smart":
+                    canli_link = handle_playwright_smart(kanal)
 
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
