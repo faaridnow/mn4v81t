@@ -1379,6 +1379,12 @@ kanallar = [
         "url": "http://ntv.cx/channel-cdnlive/TNT?code=us",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F24%2FTNT_Logo_2016.svg&w=250&output=webp"
     },
+    {
+        "type": "playwright_smart",
+        "ad": "NBC USA",
+        "url": "http://ntv.cx/channel-cdnlive/NBC?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQYC5OrCu-3Oe4RlGCG-CP_f28eE4f0LVd46sO3s2pzyQ%26s%3D10&w=250&output=webp"
+    },
 ]
 
 # ==============================================================================
