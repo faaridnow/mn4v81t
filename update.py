@@ -429,7 +429,7 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4e/Kanal_D.png/250px-Kanal_D.png"
     },
     {
-        "type": "trt",
+        "type": "playwright",
         "ad": "Euro D",
         "url": "https://www.eurod.net.tr/canli-yayin",
         "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest/scale-to-width-down/250?cb=20220108144208"
@@ -453,10 +453,9 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://image.pngaaa.com/643/774643-middle.png&w=250"
     },
     {
-        "type": "generic_scraper",
+        "type": "playwright",
         "ad": "Show TV",
-        "url": "https://www.showtv.com.tr/canli-yayin", 
-        "stream_base": "https://ciner.daioncdn.net/showtv/showtv_720p.m3u8",
+        "url": "https://canlitv.com/show-tv-izle-1", 
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
     {
@@ -503,7 +502,8 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "Kanal 7",
-        "url": "https://www.kanal7.com/canli-izle"
+        "url": "https://canlitv.com/kanal7",
+        "logo": "https://cdn.kanal7.com/kanal7/wp-content/themes/kanal7/v2/images/kanal7-logo-gray.svg"
     },
     {
         "type": "direct",
@@ -557,12 +557,6 @@ kanallar = [
         "ad": "Kanal 26",
         "url": "https://canlitv.com/kanal-26",
         "logo": "https://images.weserv.nl/?url=https://www.digiturkburada.com.tr/kanal3/kanal-buyuk/kanal-26-buyuk.png?rkt=DfS6Tgv6Hjr93k3&w=250"
-    },
-    {
-        "type": "direct",
-        "ad": "TRT Belgesel",
-        "stream_url": "https://tv-trtbelgesel-dai.medya.trt.com.tr/master_3.m3u8",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TRT_Belgesel_logo_%282019-%29.svg/250px-TRT_Belgesel_logo_%282019-%29.svg.png"
     },
     {
         "type": "direct",
@@ -671,12 +665,6 @@ kanallar = [
     "ad": "Суббота",
     "url": "https://rutube.ru/live/video/310744c10a5809da38aa445c952976da/",
     "logo": "https://pic.rtbcdn.ru/user/dd/0e/dd0e078410ed58d778b38164b3ccdc0d.jpg?size=s"
-    },
-    {
-    "type": "playwright",
-    "ad": "ТНТ",
-    "url": "https://ritsatv.ru/movie-id300118-tnt",
-    "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo_tnt.png&w=250"
     },
     # ===== ПОЗНАВАТЕЛЬНЫЕ =====
     {
@@ -1381,6 +1369,12 @@ kanallar = [
     },
     {
         "type": "playwright_smart",
+        "ad": "truTV USA",
+        "url": "http://ntv.cx/channel-cdnlive/truTV?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F36%2FTruTV_2014.svg&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
         "ad": "NBC USA",
         "url": "http://ntv.cx/channel-cdnlive/NBC?code=us",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQYC5OrCu-3Oe4RlGCG-CP_f28eE4f0LVd46sO3s2pzyQ%26s%3D10&w=250&output=webp"
@@ -1402,6 +1396,36 @@ kanallar = [
         "ad": "HBO USA",
         "url": "http://ntv.cx/channel-cdnlive/HBO?code=us",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fd%2Fde%2FHBO_logo.svg&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "USA Network",
+        "url": "http://ntv.cx/channel-cdnlive/USA-Network?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRpNC61b4rSYqTnkNmuXddg-qNF5aJiREVY0D8ThPyeWQ%26s%3D10&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "Showtime USA",
+        "url": "http://ntv.cx/channel-cdnlive/Showtime?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F22%2FShowtime.svg&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "Red Bull USA",
+        "url": "http://ntv.cx/channel-cdnlive/Red-Bull?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQ9SZLSuPeTWdOet-bL8vvwiIxL8YPw5xlQ5t4WYq_4h8vGoKJNGlzVL7A%26s%3D10&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "Nickelodeon USA",
+        "url": "http://ntv.cx/channel-cdnlive/Nickelodeon-TV?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTTHPWaaPLiG8821Kcgx2PQOHEG-wsDj4kM-5kGX3cS4g%26s%3D10&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "Disney Channel USA",
+        "url": "http://ntv.cx/channel-cdnlive/Disney-Channel?code=us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQ6LdO6f68lWzAeMmaD3p_wV8pVOlzpvrfqgMRJl7-MzQ%26s%3D10&w=250&output=webp"
     },
     {
         "type": "playwright_smart",
