@@ -1021,6 +1021,30 @@ kanallar = [
     "url": "https://ritsatv.ru/movie-id901490-tnt-sports-premium",
     "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHJ23KApagRAkNj-zS1Q9nhxox2bTwTx12WWRLT03EJg&s&w=250"
     },
+    {
+    "type": "playwright_smart",
+    "ad": "Sky Sports Football",
+    "url": "http://ntv.cx/channel-cdnlive/Sky-Sports-Football?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F1%2F14%2FSky_Sports_Football_-_Logo_2025.svg%2F3840px-Sky_Sports_Football_-_Logo_2025.svg.png&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "Sky Sports Main Event",
+    "url": "http://ntv.cx/channel-cdnlive/Sky-Sports-Main-Event?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff5%2FSky_Sports_Main_Event_-_Logo_2025.svg&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "Sky Sports Premier League",
+    "url": "http://ntv.cx/channel-cdnlive/Sky-Sports-Premier-League?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQc0YgzaaCFDB8KGmc9mzLRCFsQrnNdHD38tHChZQi9%26s&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "BBC One",
+    "url": "http://ntv.cx/channel-cdnlive/BBC-One?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F8b%2FBBC_One_logo_2021.svg%2F3840px-BBC_One_logo_2021.svg.png&w=250&output=webp"
+    },
     # ===== ФИЛЬМЫ =====
     {
         "type": "generic_scraper",
