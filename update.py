@@ -1057,6 +1057,18 @@ kanallar = [
     "url": "http://ntv.cx/channel-cdnlive/ITV-1?code=gb",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2I5o4RL-nutahqX4uSvYYXOobMwE0aqwgTpEzOl_Rqg&s=10"
     },
+    {
+    "type": "playwright_smart",
+    "ad": "Channel 4",
+    "url": "http://ntv.cx/channel-cdnlive/Channel-4?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F9%2F9b%2FChannel_4_%2528On_Demand%2529_2023.svg%2F960px-Channel_4_%2528On_Demand%2529_2023.svg.png&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "Channel 5",
+    "url": "http://ntv.cx/channel-cdnlive/Channel-5?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRsqXWFJ-vBX85s96_ypImJNGEBJySHFOOWD2WeztpnTw%26s%3D10&w=250&output=webp"
+    },
     # ===== ФИЛЬМЫ =====
     {
         "type": "generic_scraper",
