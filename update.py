@@ -1045,6 +1045,18 @@ kanallar = [
     "url": "http://ntv.cx/channel-cdnlive/BBC-One?code=gb",
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F8b%2FBBC_One_logo_2021.svg%2F3840px-BBC_One_logo_2021.svg.png&w=250&output=webp"
     },
+    {
+    "type": "playwright_smart",
+    "ad": "BBC Two",
+    "url": "http://ntv.cx/channel-cdnlive/BBC-Two?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQPUpM8G9yT3Ora0wKnENEdmgEQBPWOuWPsEPLkbZmC0A%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "ITV 1",
+    "url": "http://ntv.cx/channel-cdnlive/ITV-1?code=gb",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2I5o4RL-nutahqX4uSvYYXOobMwE0aqwgTpEzOl_Rqg&s=10"
+    },
     # ===== ФИЛЬМЫ =====
     {
         "type": "generic_scraper",
