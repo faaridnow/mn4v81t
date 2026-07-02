@@ -944,6 +944,18 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900983.jpg&w=250&output=webp"
     },
     {
+    "type": "playwright_smart",
+    "ad": "TNT Sports 1",
+    "url": "http://ntv.cx/channel-cdnlive/TNT-Sports-1?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F83%2FTNT_Sports_%25282023%2529.svg%2F960px-TNT_Sports_%25282023%2529.svg.png%3F_%3D20230610220736&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "TNT Sports 2",
+    "url": "http://ntv.cx/channel-cdnlive/TNT-Sports-2?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTLWHIeTGihq14FkMamy-A_4dk8VNxMifr9yvUMKjTfug%26s%3D10&w=250&output=webp"
+    },
+    {
     "type": "generic_scraper",
     "ad": "Eurosport 1",
     "url": "http://rutv.pw/eurosport1hd",
