@@ -914,21 +914,39 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbNRDrjRDKEJdaypnmg-uVj5CwXqGj1zCFtv36pp669w&s=10&w=250"
     },
     {
-    "type": "playwright",
-    "ad": "Setanta Sports 1",
-    "url": "https://ritsatv.ru/movie-id900982-setanta-1",
-    "logo": "https://images.weserv.nl/?url=https://ritsatv.ru/files/poster/original/900982.jpg&w=250"
+    "type": "playwright_smart",
+    "ad": "Match Football 1",
+    "url": "http://ntv.cx/channel-cdnlive/Match-Football-1?code=ru",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fcdn-assets.matchtv.ru%2Fassets%2Ficons%2Fchannels%2Ffutbol-1.svg&w=250&output=webp"
     },
     {
-    "type": "playwright",
-    "ad": "Setanta Sports 2",
-    "url": "https://ritsatv.ru/movie-id900983-setanta-2",
-    "logo": "https://wsrv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFR8wvcpZvK--w75DSnZM0Nloq8Rf7LJQqSSBvWWdTw3F62qT13t6NgDS8&s=10&w=250"
+    "type": "playwright_smart",
+    "ad": "Match Football 2",
+    "url": "http://ntv.cx/channel-cdnlive/Match-Football-2?code=ru",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fcdn-assets.matchtv.ru%2Fassets%2Ficons%2Fchannels%2Ffutbol-2.svg&w=250&output=webp"
     },
     {
-    "type": "generic_scraper",
+    "type": "playwright_smart",
+    "ad": "Match Football 3",
+    "url": "http://ntv.cx/channel-cdnlive/Match-Football-3?code=ru",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fcdn-assets.matchtv.ru%2Fassets%2Ficons%2Fchannels%2Ffutbol-3.svg&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "Setanta 1 RUSSIA",
+    "url": "http://ntv.cx/channel-hesgoales/Setanta-1-RUSSIA",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900982.jpg&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "Setanta 2 RUSSIA",
+    "url": "http://ntv.cx/channel-hesgoales/Setanta-2-RUSSIA",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900983.jpg&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
     "ad": "Eurosport 1",
-    "url": "http://rutv.pw/eurosport1hd",
+    "url": "http://ntv.cx/channel-hesgoales/EUROSPORT-1-RUSSIA",
     "logo": "https://wsrv.nl/?url=https://images.seeklogo.com/logo-png/40/1/eurosport-logo-png_seeklogo-407861.png&w=250"
     },
     {
