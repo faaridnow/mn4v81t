@@ -932,18 +932,6 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fcdn-assets.matchtv.ru%2Fassets%2Ficons%2Fchannels%2Ffutbol-3.svg&w=250&output=webp"
     },
     {
-    "type": "playwright",
-    "ad": "Setanta 1 RUSSIA",
-    "url": "http://ntv.cx/channel-hesgoales/Setanta-1-RUSSIA",
-    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900982.jpg&w=250&output=webp"
-    },
-    {
-    "type": "playwright",
-    "ad": "Setanta 2 RUSSIA",
-    "url": "http://ntv.cx/channel-hesgoales/Setanta-2-RUSSIA",
-    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900983.jpg&w=250&output=webp"
-    },
-    {
     "type": "playwright_smart",
     "ad": "TNT Sports 1",
     "url": "http://ntv.cx/channel-cdnlive/TNT-Sports-1?code=gb",
@@ -954,6 +942,66 @@ kanallar = [
     "ad": "TNT Sports 2",
     "url": "http://ntv.cx/channel-cdnlive/TNT-Sports-2?code=gb",
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTLWHIeTGihq14FkMamy-A_4dk8VNxMifr9yvUMKjTfug%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "TNT Sports 3",
+    "url": "http://ntv.cx/channel-cdnlive/TNT-Sports-3?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcT8tUlD_GeuC29V2J7ikzGGJYVgGluKlKEylMazNeZPrg%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "TNT Sports 4",
+    "url": "http://ntv.cx/channel-cdnlive/TNT-Sports-4?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTnzWttSuxRBR30SDPYDqjNxdHjgU9ugZogiXkkhMtPjA%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "DAZN 1",
+    "url": "http://ntv.cx/channel-cdnlive/DAZN-1?code=de",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F49%2FDAZN_1.svg&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "DAZN 1 GB",
+    "url": "http://ntv.cx/channel-cdnlive/DAZN-1?code=gb",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F49%2FDAZN_1.svg&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "DAZN 2",
+    "url": "http://ntv.cx/channel-cdnlive/DAZN-2?code=de",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTIUSZPJK__foVFUTd8ISixvfKatRKd3zlpBj89vC__8w%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "DAZN 2 PT",
+    "url": "http://ntv.cx/channel-cdnlive/DAZN-2?code=pt",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTIUSZPJK__foVFUTd8ISixvfKatRKd3zlpBj89vC__8w%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "DAZN LaLiga",
+    "url": "http://ntv.cx/channel-cdnlive/DAZN-LaLiga?code=es",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSGpBHk4uaZDDkQgdSetFOhauLBMFC6bGIr7-UgX5l7gg%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "DAZN LaLiga 2",
+    "url": "http://ntv.cx/channel-cdnlive/DAZN-LaLiga-2?code=es",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSGpBHk4uaZDDkQgdSetFOhauLBMFC6bGIr7-UgX5l7gg%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "ESPN 2",
+    "url": "http://ntv.cx/channel-cdnlive/ESPN-2?code=us",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRon_G8d0FfqDMdGW0vBKgiB5s3W68nuhEzugR6me4VjQ%26s%3D10&w=250&output=webp"
+    },
+    {
+    "type": "playwright_smart",
+    "ad": "FOX Sports 1",
+    "url": "http://ntv.cx/channel-cdnlive/FOX-Sports-1?code=us",
+    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F37%2F2015_Fox_Sports_1_logo.svg%2F1280px-2015_Fox_Sports_1_logo.svg.png&w=250&output=webp"
     },
     {
     "type": "generic_scraper",
