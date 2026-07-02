@@ -932,19 +932,19 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fcdn-assets.matchtv.ru%2Fassets%2Ficons%2Fchannels%2Ffutbol-3.svg&w=250&output=webp"
     },
     {
-    "type": "playwright_smart",
+    "type": "playwright",
     "ad": "Setanta 1 RUSSIA",
     "url": "http://ntv.cx/channel-hesgoales/Setanta-1-RUSSIA",
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900982.jpg&w=250&output=webp"
     },
     {
-    "type": "playwright_smart",
+    "type": "playwright",
     "ad": "Setanta 2 RUSSIA",
     "url": "http://ntv.cx/channel-hesgoales/Setanta-2-RUSSIA",
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900983.jpg&w=250&output=webp"
     },
     {
-    "type": "playwright_smart",
+    "type": "playwright",
     "ad": "Eurosport 1",
     "url": "http://ntv.cx/channel-hesgoales/EUROSPORT-1-RUSSIA",
     "logo": "https://wsrv.nl/?url=https://images.seeklogo.com/logo-png/40/1/eurosport-logo-png_seeklogo-407861.png&w=250"
