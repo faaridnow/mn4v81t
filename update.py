@@ -944,9 +944,9 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fritsatv.ru%2Ffiles%2Fposter%2Foriginal%2F900983.jpg&w=250&output=webp"
     },
     {
-    "type": "playwright",
+    "type": "generic_scraper",
     "ad": "Eurosport 1",
-    "url": "http://ntv.cx/channel-hesgoales/EUROSPORT-1-RUSSIA",
+    "url": "http://rutv.pw/eurosport1hd",
     "logo": "https://wsrv.nl/?url=https://images.seeklogo.com/logo-png/40/1/eurosport-logo-png_seeklogo-407861.png&w=250"
     },
     {
