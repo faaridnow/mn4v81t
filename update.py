@@ -453,9 +453,9 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://image.pngaaa.com/643/774643-middle.png&w=250"
     },
     {
-        "type": "playwright",
+        "type": "direct",
         "ad": "Show TV",
-        "url": "https://canlitv.com/show-tv-izle-1", 
+        "stream_url": "https://yayin2.canlitv.fun/live/showtv.stream/chunklist_w2090257707.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f", 
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
     {
