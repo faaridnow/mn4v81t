@@ -613,12 +613,6 @@ kanallar = [
     },
     {
     "type": "playwright",
-    "ad": "Minika GO",
-    "url": "https://canlitv.com/minika-cocuk-canli-izle",
-    "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTX2twFslHGwCEairCZV1dVQgHgvBfkJxFbCg%26s&w=250&output=webp"
-    },
-    {
-    "type": "playwright",
     "ad": "Россия 1",
     "url": "https://smotret.tv/rossiya-1",
     "logo": "https://images.weserv.nl/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Rossiya-1_Logo.svg/1280px-Rossiya-1_Logo.svg.png&w=250"
@@ -1341,6 +1335,12 @@ kanallar = [
         "ad": "Точка Отрыва",
         "url": "http://rutv.pw/tochkaotryva",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.cableman.ru%2Fsites%2Fdefault%2Ffiles%2Ftochka_otryva_1.png&w=250&output=webp"
+    },
+    {
+        "type": "playwright_smart",
+        "ad": "TBS USA",
+        "url": "https://streamsports99.ru/live-tv/TBS__us",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F2c%2FTBS_2020.svg&w=250&output=webp"
     },
 ]
 
