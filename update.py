@@ -620,7 +620,7 @@ kanallar = [
     {
     "type": "universal_scraper",
     "ad": "Первый канал",
-    "url": "https://ritsatv.ru/movie-id300104-pervyi-kanal",
+    "url": "https://rutube.ru/live/video/c58f502c7bb34a8fcdd976b221fca292/",
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
     },
     {
@@ -642,7 +642,7 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FRBK_logo.svg%2F3840px-RBK_logo.svg.png&w=250&output=webp"
     },
     {
-    "type": "playwright",
+    "type": "playwright_smart",
     "ad": "НТВ",
     "url": "https://rutube.ru/live/video/c37cd74192c6bc3d6cd6077c0c4fd686/",
     "logo": "https://pic.rtbcdn.ru/user/1f/ec/1fec36d83dfaabbf819c84a5cb044858.jpg?size=s"
@@ -654,7 +654,7 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fstatic.wikia.nocookie.net%2Ftvpedia%2Fimages%2F7%2F71%2F%25D0%259D%25D0%25A2%25D0%2592_%25D0%259C%25D0%25B8%25D1%2580_%2528%25D1%2581_2010%252C_%25D0%25B7%25D0%25B5%25D0%25BB%25D1%2591%25D0%25BD%25D1%258B%25D0%25B9_%25D1%2584%25D0%25BE%25D0%25BD%2529.svg%2Frevision%2Flatest%2Fscale-to-width-down%2F200%3Fcb%3D20201214164414%26path-prefix%3Dru&w=250&output=webp"
     },
     {
-    "type": "playwright",
+    "type": "playwright_smart",
     "ad": "Суббота",
     "url": "https://rutube.ru/live/video/310744c10a5809da38aa445c952976da/",
     "logo": "https://pic.rtbcdn.ru/user/dd/0e/dd0e078410ed58d778b38164b3ccdc0d.jpg?size=s"
