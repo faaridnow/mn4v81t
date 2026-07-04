@@ -18,7 +18,7 @@ import urllib.parse
 # page.goto() timeout-larına səbəb olurdu. İndi BİR brauzer instansı bütün
 # playwright əsaslı kanallar üçün paylaşılır, hər kanal üçün yalnız yeni
 # context/page açılır - bu, həm sürəti, həm də etibarlılığı artırır.
-PW_GOTO_TIMEOUT = 90000     # 60s -> 90s: CI-da şəbəkə gecikmələrinə tolerantlıq
+PW_GOTO_TIMEOUT = 60000     # 60s -> 90s: CI-da şəbəkə gecikmələrinə tolerantlıq
 PW_NAV_RETRIES = 2          # goto uğursuz olarsa, yenidən cəhd sayı
 PW_RETRY_BACKOFF = 3        # cəhdlər arası gözləmə (saniyə)
 
