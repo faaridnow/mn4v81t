@@ -24,7 +24,7 @@ PW_RETRY_BACKOFF = 3        # cəhdlər arası gözləmə (saniyə)
 
 # Şəkil/font/media/css yüklənməsini bloklamaq səhifə açılışını sürətləndirir
 # və CI-da lazımsız trafiki azaldaraq timeout riskini aşağı salır.
-BLOCK_RESOURCE_TYPES = {"image", "font", "media", "stylesheet"}
+BLOCK_RESOURCE_TYPES = {"image", "font", "stylesheet"}
 
 
 async def _block_heavy_resources(route):
