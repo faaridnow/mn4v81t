@@ -428,7 +428,7 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4e/Kanal_D.png/250px-Kanal_D.png"
     },
     {
-        "type": "playwright",
+        "type": "playwright_smart",
         "ad": "Euro D",
         "url": "https://www.eurod.net.tr/canli-yayin",
         "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest/scale-to-width-down/250?cb=20220108144208"
@@ -458,13 +458,13 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
     {
-        "type": "playwright",
+        "type": "playwright_smart",
         "ad": "Show Türk",
         "url": "https://www.showturk.com.tr/canli-yayin/",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/250px-Show_Turk_logo.svg.png"
     },
     {
-        "type": "playwright",
+        "type": "playwright_smart",
         "ad": "Show Max",
         "url": "https://www.showmax.com.tr/canliyayin"
     },
