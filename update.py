@@ -458,13 +458,13 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Logo_of_Show_TV.png/250px-Logo_of_Show_TV.png"
     },
     {
-        "type": "playwright_smart",
+        "type": "playwright",
         "ad": "Show Türk",
         "url": "https://www.showturk.com.tr/canli-yayin/",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Show_Turk_logo.svg/250px-Show_Turk_logo.svg.png"
     },
     {
-        "type": "playwright_smart",
+        "type": "playwright",
         "ad": "Show Max",
         "url": "https://www.showmax.com.tr/canliyayin"
     },
