@@ -11,86 +11,6 @@ import sys
 import urllib.parse
 
 # ==============================================================================
-# PLAYWRIGHT ÜMUMİ AYARLARI (CI mühitində sabitlik üçün optimallaşdırılıb)
-# ==============================================================================
-# Əvvəllər hər kanal üçün ayrı-ayrı brauzer açılırdı (~200+ dəfə chromium
-# başlatmaq). Bu, GitHub Actions runner-də CPU/RAM tükənməsinə və nəticədə
-# page.goto() timeout-larına səbəb olurdu. İndi BİR brauzer instansı bütün
-# playwright əsaslı kanallar üçün paylaşılır, hər kanal üçün yalnız yeni
-# context/page açılır - bu, həm sürəti, həm də etibarlılığı artırır.
-PW_GOTO_TIMEOUT = 60000     # 60s -> 90s: CI-da şəbəkə gecikmələrinə tolerantlıq
-PW_NAV_RETRIES = 2          # goto uğursuz olarsa, yenidən cəhd sayı
-PW_RETRY_BACKOFF = 3        # cəhdlər arası gözləmə (saniyə)
-
-# Şəkil/font/media/css yüklənməsini bloklamaq səhifə açılışını sürətləndirir
-# və CI-da lazımsız trafiki azaldaraq timeout riskini aşağı salır.
-BLOCK_RESOURCE_TYPES = {"image", "font", "stylesheet"}
-
-
-async def _block_heavy_resources(route):
-    if route.request.resource_type in BLOCK_RESOURCE_TYPES:
-        await route.abort()
-    else:
-        await route.continue_()
-
-
-async def _goto_with_retry(page, url, timeout=PW_GOTO_TIMEOUT, retries=PW_NAV_RETRIES):
-    """page.goto() üçün retry məntiqi - müvəqqəti şəbəkə problemlərinə qarşı."""
-    last_exc = None
-    for attempt in range(1, retries + 1):
-        try:
-            await page.goto(url, wait_until="domcontentloaded", timeout=timeout)
-            return True
-        except Exception as e:
-            last_exc = e
-            print(f"   [Naviqasiya cəhdi {attempt}/{retries} uğursuz]: {e}")
-            if attempt < retries:
-                await asyncio.sleep(PW_RETRY_BACKOFF)
-    if last_exc:
-        raise last_exc
-    return False
-
-
-async def _capture_m3u8(browser, url, capture="response", click=False, wait_after=10000):
-    """
-    Paylaşılan brauzer instansı üzərində yeni context/page açıb m3u8
-    linklərini tutan ortaq funksiya. Bütün playwright handler-ləri bunu
-    istifadə edir ki, hər kanal üçün yenidən brauzer başlatmasın.
-    """
-    context = await browser.new_context(
-        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    )
-    page = await context.new_page()
-    await page.route("**/*", _block_heavy_resources)
-
-    links = []
-
-    def on_traffic(obj):
-        u = obj.url
-        if ".m3u8" in u:
-            links.append(u)
-
-    if capture == "response":
-        page.on("response", on_traffic)
-    else:
-        page.on("request", on_traffic)
-
-    try:
-        await _goto_with_retry(page, url)
-        if click:
-            try:
-                await page.mouse.click(500, 500)
-            except Exception:
-                pass
-        await page.wait_for_timeout(wait_after)
-    except Exception as e:
-        print(f"   [Playwright Xətası]: {e}")
-    finally:
-        await context.close()
-
-    return list(set(links))
-
-# ==============================================================================
 # HƏR TİP ÜÇÜN XÜSUSİ METODLAR (HANDLERS)
 # ==============================================================================
 
@@ -181,22 +101,80 @@ def handle_trt(kanal, headers):
         print(f'   [TRT Xətası]: {e}')
     return None
     
-async def handle_playwright_async(browser, kanal):
+def handle_playwright(kanal, headers):
     """
-    İstənilən kanalı paylaşılan brauzer instansı üzərində skan edib
-    m3u8 linkini qoparan universal funksiya. (Əvvəlki versiya hər kanal
-    üçün yeni chromium prosesi açırdı - bu, ən böyük gecikmə mənbəyi idi.)
+    İstənilən kanalı Playwright ilə skan edib m3u8 linkini qoparan universal funksiya.
     """
-    print(f'   [Playwright] hədəf: {kanal["ad"]}')
+    print(f'   [Playwright] Paylaşılan brauzerdə hədəf skan edilir: {kanal["ad"]}')
+    
+    m3u8_links = []
+    
+    # Hər dəfə kanalın öz URL-i bura gələcək
     url = kanal["url"]
 
-    m3u8_links = await _capture_m3u8(browser, url, capture="response", click=False, wait_after=15000)
+    async def run_browser():
+        # Brauzer bir dəfə açılıb bütün metodlar arasında paylaşılır
+        browser = await get_shared_browser()
+        page = await browser.new_page()
+
+        def handle_response(response):
+            # İstənilən m3u8 uzantısını tutur
+            if ".m3u8" in response.url:
+                m3u8_links.append(response.url)
+
+        page.on("response", handle_response)
+
+        try:
+            await page.goto(url, timeout=60000, wait_until="domcontentloaded")
+            await page.wait_for_timeout(15000)
+        except Exception as e:
+            print(f"   [Playwright Xətası]: {e}")
+        finally:
+            # Brauzeri bağlamırıq (paylaşılır), sadəcə səhifəni bağlayırıq
+            await page.close()
+
+    try:
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(run_browser())
+    except Exception as e:
+        print(f"   [Playwright Dövr Xətası]: {e}")
 
     if m3u8_links:
         # Tapılan linklərdən birincisini götürürük
-        return list(m3u8_links)[0].replace('\\', '')
+        taze_link = list(set(m3u8_links))[0].replace('\\', '')
+        return taze_link
 
     return None
+
+# ==============================================================================
+# PAYLAŞILAN BRAUZER (Bütün Playwright metodları bir dəfə açılan brauzerdən istifadə edir)
+# ==============================================================================
+_playwright_ctx = None
+_shared_browser = None
+
+async def get_shared_browser():
+    """
+    Bütün Playwright əsaslı metodlar (handle_playwright, handle_universal_scraper,
+    handle_playwright_smart) üçün tək dəfə açılan və paylaşılan brauzer instansını qaytarır.
+    """
+    global _playwright_ctx, _shared_browser
+    if _shared_browser is None:
+        _playwright_ctx = await async_playwright().start()
+        _shared_browser = await _playwright_ctx.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
+        )
+    return _shared_browser
+
+async def close_shared_browser():
+    """Bütün kanallar işləndikdən sonra paylaşılan brauzeri bağlayır."""
+    global _playwright_ctx, _shared_browser
+    if _shared_browser is not None:
+        await _shared_browser.close()
+        _shared_browser = None
+    if _playwright_ctx is not None:
+        await _playwright_ctx.stop()
+        _playwright_ctx = None
 
 # ==============================================================================
 # YENİ METOD: UNIVERSAL M3U8 SCRAPER (check_link_alive ilə)
@@ -231,8 +209,30 @@ async def check_link_alive(link, timeout=10, referer=None):
     except Exception:
         return False
 
-async def _get_best_stream_async(browser, url):
-    raw_links = await _capture_m3u8(browser, url, capture="response", click=True, wait_after=8000)
+async def _universal_scraper_async(url):
+    # Brauzer bir dəfə açılıb bütün metodlar arasında paylaşılır
+    browser = await get_shared_browser()
+    context = await browser.new_context(viewport={"width": 1280, "height": 720})
+    page = await context.new_page()
+    found_links = set()
+
+    def handle_response(response):
+        if ".m3u8" in response.url:
+            found_links.add(response.url)
+
+    page.on("response", handle_response)
+    try:
+        await page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        await page.wait_for_timeout(5000)
+        await page.mouse.click(640, 360)
+        await page.wait_for_timeout(8000)
+    finally:
+        # Brauzeri bağlamırıq (paylaşılır), sadəcə konteksti bağlayırıq
+        await context.close()
+    return list(found_links)
+
+async def _get_best_stream_async(url):
+    raw_links = await _universal_scraper_async(url)
     cleaned = list(set(clean_link(l) for l in raw_links))
     stable_links = [l for l in cleaned if is_stable(l)]
     fallback_links = [l for l in cleaned if not is_stable(l)]
@@ -249,34 +249,64 @@ async def _get_best_stream_async(browser, url):
             return link
     return None
 
-async def handle_universal_scraper_async(browser, kanal):
+def handle_universal_scraper(kanal):
     """
     Tip 7: Stabil linki tapmaq üçün check_link_alive yoxlaması ilə
     universal Playwright scraper. Referer avtomatik olaraq kanalın
-    öz saytından götürülür. Paylaşılan brauzer instansından istifadə edir.
+    öz saytından götürülür.
     """
     print(f'   [Universal Scraper] Başladı: {kanal["ad"]}')
+    url = kanal["url"]
     try:
-        return await _get_best_stream_async(browser, kanal["url"])
+        loop = asyncio.get_event_loop()
+        result = loop.run_until_complete(_get_best_stream_async(url))
+        return result
     except Exception as e:
         print(f"   [Universal Scraper Xətası]: {e}")
         return None
 
-async def extract_m3u8_smart(browser, video_page_url):
-    raw_links = await _capture_m3u8(browser, video_page_url, capture="request", click=True, wait_after=10000)
-    mono_links = [l for l in raw_links if "mono.m3u8" in l]
-    master_links = [l for l in raw_links if "mono.m3u8" not in l]
+async def extract_m3u8_smart(video_page_url):
+    raw_links = []
+
+    def handle_request(request):
+        url = request.url
+        if ".m3u8" in url:
+            raw_links.append(url)
+
+    # Brauzer bir dəfə açılıb bütün metodlar arasında paylaşılır
+    browser = await get_shared_browser()
+    context = await browser.new_context(
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    )
+    page = await context.new_page()
+    page.on("request", handle_request)
+
+    try:
+        await page.goto(video_page_url, wait_until="domcontentloaded", timeout=60000)
+        await page.mouse.click(500, 500)
+        await page.wait_for_timeout(10000)
+    except Exception as e:
+        print(f"   [Smart Playwright Xətası]: {e}")
+    finally:
+        # Brauzeri bağlamırıq (paylaşılır), sadəcə konteksti bağlayırıq
+        await context.close()
+
+    unique_links = list(set(raw_links))
+    mono_links = [l for l in unique_links if "mono.m3u8" in l]
+    master_links = [l for l in unique_links if "mono.m3u8" not in l]
+
     return mono_links if mono_links else master_links
 
-async def handle_playwright_smart(browser, kanal):
-    """Yeni 'ağıllı' filtrləmə ilə işləyən Playwright handler (paylaşılan brauzer istifadə edir)"""
-    print(f'   [Smart Playwright] hədəf: {kanal["ad"]}')
+def handle_playwright_smart(kanal):
+    """Yeni 'ağıllı' filtrləmə ilə işləyən Playwright handler (kanal dict qəbul edir)"""
+    print(f'   [Smart Playwright] Brauzer işə salındı, hədəf: {kanal["ad"]}')
     try:
-        netice = await extract_m3u8_smart(browser, kanal["url"])
+        loop = asyncio.get_event_loop()
+        netice = loop.run_until_complete(extract_m3u8_smart(kanal["url"]))
         if netice:
             return netice[0]
     except Exception as e:
-        print(f'   [Smart Playwright Xətası]: {e}')
+        print(f'   [Smart Playwright Dövr Xətası]: {e}')
     return None
 # ==============================================================================
 # MƏRKƏZİ KANAL BAZASI
@@ -428,7 +458,7 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4e/Kanal_D.png/250px-Kanal_D.png"
     },
     {
-        "type": "playwright_smart",
+        "type": "playwright",
         "ad": "Euro D",
         "url": "https://www.eurod.net.tr/canli-yayin",
         "logo": "https://static.wikia.nocookie.net/logopedia/images/1/1d/Euro_D.svg/revision/latest/scale-to-width-down/250?cb=20220108144208"
@@ -620,7 +650,7 @@ kanallar = [
     {
     "type": "universal_scraper",
     "ad": "Первый канал",
-    "url": "https://rutube.ru/live/video/c58f502c7bb34a8fcdd976b221fca292/",
+    "url": "https://ritsatv.ru/movie-id300104-pervyi-kanal",
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
     },
     {
@@ -642,7 +672,7 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FRBK_logo.svg%2F3840px-RBK_logo.svg.png&w=250&output=webp"
     },
     {
-    "type": "playwright_smart",
+    "type": "playwright",
     "ad": "НТВ",
     "url": "https://rutube.ru/live/video/c37cd74192c6bc3d6cd6077c0c4fd686/",
     "logo": "https://pic.rtbcdn.ru/user/1f/ec/1fec36d83dfaabbf819c84a5cb044858.jpg?size=s"
@@ -654,7 +684,7 @@ kanallar = [
     "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fstatic.wikia.nocookie.net%2Ftvpedia%2Fimages%2F7%2F71%2F%25D0%259D%25D0%25A2%25D0%2592_%25D0%259C%25D0%25B8%25D1%2580_%2528%25D1%2581_2010%252C_%25D0%25B7%25D0%25B5%25D0%25BB%25D1%2591%25D0%25BD%25D1%258B%25D0%25B9_%25D1%2584%25D0%25BE%25D0%25BD%2529.svg%2Frevision%2Flatest%2Fscale-to-width-down%2F200%3Fcb%3D20201214164414%26path-prefix%3Dru&w=250&output=webp"
     },
     {
-    "type": "playwright_smart",
+    "type": "playwright",
     "ad": "Суббота",
     "url": "https://rutube.ru/live/video/310744c10a5809da38aa445c952976da/",
     "logo": "https://pic.rtbcdn.ru/user/dd/0e/dd0e078410ed58d778b38164b3ccdc0d.jpg?size=s"
@@ -1347,82 +1377,63 @@ kanallar = [
 # ==============================================================================
 # ƏSAS İCRA PROSESİ (MAIN)
 # ==============================================================================
-# Playwright tələb edən tiplər - bunlar üçün ortaq brauzer instansı istifadə olunur
-PLAYWRIGHT_TYPES = {"playwright", "universal_scraper", "playwright_smart"}
-
-
-async def main():
+def main():
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0',
         'Accept-Language': 'az,en-US;q=0.9,en;q=0.8'
     }
-
+    
     output_file = "channels.m3u"
-    netice_sirasi = [None] * len(kanallar)
 
-    # Brauzer YALNIZ BİR DƏFƏ açılır və bütün playwright-əsaslı kanallar
-    # üçün paylaşılır (əvvəlki versiyada hər kanal üçün ayrıca açılırdı).
-    need_browser = any(k["type"] in PLAYWRIGHT_TYPES for k in kanallar)
-    browser = None
-    pw_ctx = None
-
-    if need_browser:
-        pw_ctx = async_playwright()
-        p = await pw_ctx.__aenter__()
-        browser = await p.chromium.launch(
-            headless=True,
-            args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
-        )
-
-    try:
-        for index, kanal in enumerate(kanallar, start=1):
-            print(f'[{index}/{len(kanallar)}] [{kanal["ad"]}] İşlənir...')
-            canli_link = None
-
-            try:
-                tip = kanal["type"]
-                if tip == "direct":
-                    canli_link = handle_direct(kanal)
-                elif tip == "token_yoda":
-                    canli_link = handle_token_yoda(kanal, headers)
-                elif tip == "generic_scraper":
-                    canli_link = handle_generic_scraper(kanal, headers)
-                elif tip == "trt":
-                    canli_link = handle_trt(kanal, headers)
-                elif tip == "playwright":
-                    canli_link = await handle_playwright_async(browser, kanal)
-                elif tip == "universal_scraper":
-                    canli_link = await handle_universal_scraper_async(browser, kanal)
-                elif tip == "playwright_smart":
-                    canli_link = await handle_playwright_smart(browser, kanal)
-
-                netice_sirasi[index - 1] = canli_link
-
-                if canli_link:
-                    print(f'   => [UĞURLU] {kanal["ad"]} tapıldı.\n')
-                else:
-                    print(f'   => [XƏTA] {kanal["ad"]} üçün token və ya link generasiya edilə bilmədi.\n')
-
-            except Exception as e:
-                print(f'   => [SİSTEM XƏTASI] {kanal["ad"]} icra edilərkən gözlənilməz problem: {e}\n')
-    finally:
-        if browser:
-            await browser.close()
-        if pw_ctx:
-            await pw_ctx.__aexit__(None, None, None)
+    # Playwright brauzeri bütün siyahı üçün bir dəfə açılır (hər kanalda yenidən açılmır)
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(get_shared_browser())
+    print("[Playwright] Paylaşılan brauzer bir dəfə işə salındı, bütün metodlar bundan istifadə edəcək.\n")
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
-        for kanal, canli_link in zip(kanallar, netice_sirasi):
-            if not canli_link:
-                continue
-            if kanal.get("logo"):
-                f.write(f'#EXTINF:-1 tvg-logo="{kanal["logo"]}",{kanal["ad"]}\n')
-            else:
-                f.write(f'#EXTINF:-1,{kanal["ad"]}\n')
-            f.write(f'{canli_link}\n')
+        
+        for index, kanal in enumerate(kanallar, start=1):
+            print(f'[{index}/{len(kanallar)}] [{kanal["ad"]}] İşlənir...')
+            canli_link = None
+            
+            try:
+                # İF-ELİF BLOKLARI YENİLƏNDİ
+                if kanal["type"] == "direct":
+                    canli_link = handle_direct(kanal)
+                elif kanal["type"] == "token_yoda":
+                    canli_link = handle_token_yoda(kanal, headers)
+                elif kanal["type"] == "generic_scraper":
+                    canli_link = handle_generic_scraper(kanal, headers)
+                elif kanal["type"] == "trt":
+                    canli_link = handle_trt(kanal, headers)
+                elif kanal["type"] == "playwright":
+                    canli_link = handle_playwright(kanal, headers)
+                elif kanal["type"] == "universal_scraper":
+                    canli_link = handle_universal_scraper(kanal)
+                elif kanal["type"] == "playwright_smart":
+                    canli_link = handle_playwright_smart(kanal)
+
+                if canli_link:
+                    # Loqo dəstəyi bura əlavə edildi
+                    if "logo" in kanal and kanal["logo"]:
+                        f.write(f'#EXTINF:-1 tvg-logo="{kanal["logo"]}",{kanal["ad"]}\n')
+                    else:
+                        f.write(f'#EXTINF:-1,{kanal["ad"]}\n')
+                        
+                    f.write(f'{canli_link}\n')
+                    print(f'   => [UĞURLU] {kanal["ad"]} pleylistə yazıldı.\n')
+                else:
+                    print(f'   => [XƏTA] {kanal["ad"]} üçün token və ya link generasiya edilə bilmədi.\n')
+                    
+            except Exception as e:
+                print(f'   => [SİSTEM XƏTASI] {kanal["ad"]} icra edilərkən gözlənilməz problem: {e}\n')
+
+    # Bütün kanallar işləndikdən sonra paylaşılan brauzer bağlanır
+    loop.run_until_complete(close_shared_browser())
+    print("[Playwright] Paylaşılan brauzer bağlandı.")
 
     print(f"Siyahı uğurla '{output_file}' faylına yadda saxlanıldı.")
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
