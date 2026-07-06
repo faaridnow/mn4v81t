@@ -1417,9 +1417,9 @@ def main():
                 if canli_link:
                     # Loqo dəstəyi bura əlavə edildi
                     if "logo" in kanal and kanal["logo"]:
-                        f.write(f'#EXTINF:-1 tvg-logo="{kanal["logo"]}",{kanal["ad"]}\n')
+                        f.write(f'#EXTINF:-1 tvg-logo="{kanal["logo"]}" aspect-ratio="original",{kanal["ad"]}\n')
                     else:
-                        f.write(f'#EXTINF:-1,{kanal["ad"]}\n')
+                        f.write(f'#EXTINF:-1 aspect-ratio="original",{kanal["ad"]}\n')
                         
                     f.write(f'{canli_link}\n')
                     print(f'   => [UĞURLU] {kanal["ad"]} pleylistə yazıldı.\n')
