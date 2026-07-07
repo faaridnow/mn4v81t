@@ -1383,7 +1383,7 @@ def main():
         'Accept-Language': 'az,en-US;q=0.9,en;q=0.8'
     }
     
-    output_file = "channels.m3u"
+    output_file = "zq7k29x.m3u"
 
     # Playwright brauzeri bütün siyahı üçün bir dəfə açılır (hər kanalda yenidən açılmır)
     loop = asyncio.get_event_loop()
