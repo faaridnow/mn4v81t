@@ -33,8 +33,8 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add channels.m3u
+          git add zq7k29x.m3u
           # Əgər heç bir dəyişiklik yoxdursa xəta verməməsi üçün exit 0 istifadə edirik
-          git commit -m "Kanallar avtomatik yeniləndi" || exit 0
+          git commit -m "Yeniləndi" || exit 0
           git pull --rebase origin main
           git push
