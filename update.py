@@ -589,6 +589,18 @@ kanallar = [
     },
     {
         "type": "direct",
+        "ad": "Tivi 6",
+        "stream_url": "https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/chunks.m3u8",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcROTIVbojc-mOIxJ6tvyaUXXlk_AXF0AQL8RzWnWQburg%26s%3D10&w=250&output=webp"
+    },
+    {
+        "type": "direct",
+        "ad": "Tivibu Spor",
+        "stream_url": "https://yayin2.canlitv.fun/live/tivibuspor.stream/chunklist_w544225848.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Ftr%2F3%2F36%2FTivibu_spor_logosu.jpg&w=250&output=webp"
+    },
+    {
+        "type": "direct",
         "ad": "TLC",
         "stream_url": "https://yayin2.canlitv.fun/live/tlc.stream/chunklist_w942289914.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3c%2FTLC_logo_%25282023%2529.svg%2F250px-TLC_logo_%25282023%2529.svg.png&w=250&output=webp"
