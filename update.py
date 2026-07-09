@@ -607,6 +607,18 @@ kanallar = [
     },
     {
         "type": "direct",
+        "ad": "A Spor",
+        "stream_url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor_1080p.m3u8",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcRjBn1pjI8bfaGu65qZFuIcw0zMk0glB-6MWBQkYTOg%26s%3D10&w=250&output=webp"
+    },
+    {
+        "type": "generic_scraper",
+        "ad": "HT Spor",
+        "url": "https://www.htspor.com/canli-yayin",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fim.haberturk.com%2Fassets%2Flaravel%2Fimages%2Fcommon%2Fsport%2Flogo%2Fht-spor-white.svg&w=250&output=webp"
+    },
+    {
+        "type": "direct",
         "ad": "TLC",
         "stream_url": "https://yayin2.canlitv.fun/live/tlc.stream/chunklist_w942289914.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3c%2FTLC_logo_%25282023%2529.svg%2F250px-TLC_logo_%25282023%2529.svg.png&w=250&output=webp"
