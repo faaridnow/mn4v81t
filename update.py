@@ -452,9 +452,9 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/TRT_1_logo_%282012-2021%29.png/250px-TRT_1_logo_%282012-2021%29.png"
     },
     {
-        "type": "trt",
+        "type": "direct",
         "ad": "Kanal D",
-        "url": "https://www.kanald.com.tr/canli-yayin",
+        "stream_url": "https://host3.onlineradyotv.net:8081/kanald/tracks-v1a1/mono.ts.m3u8",
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/4/4e/Kanal_D.png/250px-Kanal_D.png"
     },
     {
@@ -523,12 +523,6 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e8/A2_logosu.jpg/250px-A2_logosu.jpg"
     },
     {
-        "type": "generic_scraper",
-        "ad": "NOW TV",
-        "url": "https://www.nowtv.com.tr/canli-yayin",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NOW_TV_%28Turkey%29_wordmark-red.svg/250px-NOW_TV_%28Turkey%29_wordmark-red.svg.png"
-    },
-    {
         "type": "playwright",
         "ad": "Kanal 7",
         "url": "https://canlitv.com/kanal7",
@@ -545,6 +539,12 @@ kanallar = [
         "url": "https://beyaztv.com.tr/canli-yayin",
         "logo": "https://images.weserv.nl/?url=https://beyaztv.com.tr/images/logo.png&w=250"
     },  
+    {
+        "type": "direct",
+        "ad": "TV 24",
+        "stream_url": "https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.yirmidort.tv%2Fassets%2Fheader%2FlogoWhite.png&w=250&output=webp"
+    },
     {
         "type": "generic_scraper",
         "ad": "NTV",
@@ -595,6 +595,12 @@ kanallar = [
     },
     {
         "type": "direct",
+        "ad": "TV 4",
+        "stream_url": "https://turkmedya-live.ercdn.net/tv4/tv4_1080p.m3u8",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTIoHKbWp3s90_cPxYcJTFzvDaDNcN0pfYFxCt79WhAzA%26s&w=250&output=webp"
+    },
+    {
+        "type": "direct",
         "ad": "Tivibu Spor",
         "stream_url": "https://yayin2.canlitv.fun/live/tivibuspor.stream/chunklist_w544225848.m3u8?hash=4b1c6f1b26a8f5c00d2f4cc01662890f",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Ftr%2F3%2F36%2FTivibu_spor_logosu.jpg&w=250&output=webp"
@@ -628,12 +634,6 @@ kanallar = [
         "ad": "NR 1 Turk",
         "url": "https://www.numberone.com.tr/2015/12/20/number1-turk-tv-canli-yayin/",
         "logo": "https://images.weserv.nl/?url=https://www.numberone.com.tr/wp-content/uploads/2021/10/yeni-logonr1.png&w=250"
-    },  
-    {
-        "type": "playwright",
-        "ad": "Kral POP TV",
-        "url": "https://puhutv.com/kral-pop-tv-canli-yayin",
-        "logo": "https://images.weserv.nl/?url=https://www.kralmuzik.com.tr/app/themes/kral/assets/images/kralmuzik_logo.png?v=2&w=250"
     },  
     {
         "type": "playwright",
