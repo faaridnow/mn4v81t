@@ -1414,6 +1414,12 @@ kanallar = [
         "url": "https://streamsports99.ru/live-tv/TBS__us",
         "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F2c%2FTBS_2020.svg&w=250&output=webp"
     },
+    {
+        "type": "direct",
+        "ad": "The Walking Dead Universe",
+        "stream_url": "https://amc-twdfanexperience-1-us.xumo.wurl.tv/4300.m3u8",
+        "logo": "https://images.weserv.nl/?url=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTEQhW35WgGPEVGoowfwrULF3D67ns18-T2mdac-K8vLm5veW8TtumQBf4%26s%3D10&w=250&output=webp"
+    },
 ]
 
 # ==============================================================================
