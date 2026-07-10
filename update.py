@@ -523,6 +523,12 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e8/A2_logosu.jpg/250px-A2_logosu.jpg"
     },
     {
+        "type": "direct",
+        "ad": "NOW TV",
+        "stream_url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv_720p.m3u8",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/NOW_TV_%28Turkey%29_wordmark-red.svg/250px-NOW_TV_%28Turkey%29_wordmark-red.svg.png"
+    },
+    {
         "type": "playwright",
         "ad": "Kanal 7",
         "url": "https://canlitv.com/kanal7",
