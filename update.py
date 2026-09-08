@@ -369,11 +369,9 @@ kanallar = [
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Real_TV_loqosu_%282018%29.png/250px-Real_TV_loqosu_%282018%29.png"
     },
     {
-        "type": "token_yoda",
+        "type": "playwright",
         "ad": "ARB 24", 
-        "url": "https://yoda.az/",
-        "stream_base": "https://str.yodacdn.net/arb24/tracks-v1a1/mono.ts.m3u8",
-        "referer": "https://yodaplayer.yodacdn.net/",
+        "url": "https://canlitv.com/arb-24-tv",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/ARB_24_logo1.png/250px-ARB_24_logo1.png"
     },
     {
@@ -393,19 +391,15 @@ kanallar = [
         "logo": "https://images.weserv.nl/?url=https://tmb.tv/wp-content/uploads/2025/01/tmbtaz-png.png&w=250"
     },
     {
-        "type": "token_yoda",
+        "type": "playwright",
         "ad": "ARB Gunes", 
-        "url": "https://yoda.az/",
-        "stream_base": "https://str.yodacdn.net/arbgunesh/tracks-v1a1/mono.ts.m3u8",
-        "referer": "https://yodaplayer.yodacdn.net/",
+        "url": "https://canlitv.com/arb-gunes-tv",
         "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/ARB_G%C3%BCn%C9%99%C5%9F_logo.png/250px-ARB_G%C3%BCn%C9%99%C5%9F_logo.png"
     },
     {
-        "type": "token_yoda",
+        "type": "playwright",
         "ad": "CBC", 
-        "url": "https://yoda.az/",
-        "stream_base": "https://str.yodacdn.net/cbc/tracks-v1a1/mono.ts.m3u8",
-        "referer": "https://yodaplayer.yodacdn.net/"
+        "url": "https://canlitv.com/cbc-tv"
     },
     {
         "type": "token_yoda",
@@ -466,7 +460,7 @@ kanallar = [
     {
         "type": "playwright",
         "ad": "TV 2",
-        "url": "https://www.tv2.com.tr/canli-yayin",
+        "url": "https://canlitv.com/tv2",
         "logo": "https://upload.wikimedia.org/wikipedia/tr/thumb/a/ae/Tv2_logo_%282026%29.png/250px-Tv2_logo_%282026%29.png"
     },
     {
@@ -694,12 +688,6 @@ kanallar = [
     "ad": "Первый канал",
     "url": "https://ritsatv.ru/movie-id300104-pervyi-kanal",
     "logo": "https://images.weserv.nl/?url=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEh1y_xdq4L0p_s4f6olTcplgRn4Jl4ReFLYbQOaWIg&s&w=250"
-    },
-    {
-    "type": "playwright",
-    "ad": "Россия РТР",
-    "url": "https://smotret.tv/rossiya-rtr",
-    "logo": "https://images.weserv.nl/?url=https://telekanaly.com/images/rossiya-rtr.webp&w=250"
     },
     {
     "type": "universal_scraper",
